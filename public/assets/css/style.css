@@ -208,8 +208,8 @@ h6 {
 }
 .img-responsive {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
 }
 .btn {
   font-family: "Oswald";
@@ -319,8 +319,8 @@ h6 {
   font-size: 28px;
   line-height: 48px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   clear: both;
   position: relative;
   padding: 0 10px;
@@ -618,7 +618,7 @@ h6 {
   background-color: #4ecdc4;
   color: #fff;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.01);
-  border-botom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   padding: 20px 0;
 }
 .page-breadcrumb .breadcrumb {
@@ -711,8 +711,8 @@ h6 {
 }
 .st-member .st-member-info .st-member-social ul li {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   margin: 0;
   padding: 0;
 }
@@ -1308,8 +1308,8 @@ ul.styled-list.list-star li:before {
 }
 .call-us h3 {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   color: #fff;
   text-transform: uppercase;
   font-size: 30px;
@@ -1413,8 +1413,8 @@ ul.styled-list.list-star li:before {
 }
 .widget ul li .recent-post a {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   padding: 0;
 }
 .widget ul li .recent-post a:hover {
@@ -1442,8 +1442,8 @@ ul.styled-list.list-star li:before {
   border-radius: 40px;
   color: #737373;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   padding: 3px 20px;
   border-color: #e5e5e5;
   border-width: 1px;
@@ -1494,8 +1494,8 @@ ul.styled-list.list-star li:before {
   margin: 0;
   margin-right: 5px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
 }
 .subscribe-form {
   max-width: 500px;
