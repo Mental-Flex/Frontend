@@ -126,6 +126,7 @@ html {
   
   button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
     cursor: pointer;
   }
   
@@ -158,6 +159,7 @@ html {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     -webkit-appearance: textfield;
+    appearance: textfield;
   }
   
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
@@ -3039,6 +3041,7 @@ table th[class*=col-] {
   
   input[type=search] {
     -webkit-appearance: none;
+    appearance: none;
   }
   
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -6842,6 +6845,7 @@ a.thumbnail.active {
   
   button.close {
     -webkit-appearance: none;
+    appearance: none;
     padding: 0;
     cursor: pointer;
     background: 0 0;
