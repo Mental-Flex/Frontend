@@ -4,7 +4,7 @@ import Landing from './views/Landing';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Landing/>
     </div>
   );

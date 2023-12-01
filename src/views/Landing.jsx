@@ -4,6 +4,34 @@ import React from "react"
 
 const Landing = () => {
 
+	const sectionStyle = {
+		backgroundPosition: '50% 0px',
+	  };
+
+
+	  const itemStyle = {
+		display: 'block',
+		width: '4800px',
+		left: '0px',
+		transition: 'all 0ms ease 0s',
+		transform: 'translate3d(-800px, 0px, 0px)',
+		transformOrigin: '1200px center',
+		perspectiveOrigin: '1200px center',
+	  };
+
+	  const carouselStyle = {
+		display: 'block',
+		opacity: 1,
+	  };
+
+
+	  const miEstilo = {
+		width: '800px',
+		position: 'relative',
+		left: '800px',
+	  };
+	
+
     return(
 
         <div data-spy="scroll" data-target=".main-nav">
@@ -38,15 +66,15 @@ const Landing = () => {
 		</nav>
 	</header>
 
-	<section className="home" id="home" data-stellar-background-ratio="0.4">
+	<section className="home" id="home" data-stellar-background-ratio="0.4" style={sectionStyle}>
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					<div className="st-home-unit">
+					<div className="st-home-unit" style={{ padding: '258px 0', opacity: 1 }}>
 						<div className="hero-txt">
 							<p className="hero-work">Web Design - Web Development - UX Design</p>
 							<h2 className="hero-title">BEST Template for Agency</h2>
-							 <p className="hero-sub-title">We Provide Hight Quality Bootstrap Template</p> 
+							<p className="hero-sub-title">We Provide Hight Quality Bootstrap Template</p> 
 							 <a href="#" className="btn btn-default btn-lg left-btn">Purchase Now</a> 
 							<a href="#" className="btn btn-main btn-lg">Find Out More</a>
 						</div>
@@ -341,7 +369,7 @@ const Landing = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-5">
-					<img src="assets/assets/photos/feature.png" alt="" className="img-responsive"/>
+					<img src="assets/photos/feature.png" alt="" className="img-responsive"/>
 				</div>
 				<div className="col-md-7">
 					<h3 className="bottom-line">SOME OF OUR IMPORTANT FEATURES</h3>
@@ -393,7 +421,7 @@ const Landing = () => {
 
 					<div className="grid">
 						<figure className="portfolio-item" data-groups='["photography"]'>
-							<img src="assets/assets/photos/portfolio.jpg" alt="" />
+							<img src="assets/photos/portfolio.jpg" alt="" />
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
@@ -401,7 +429,7 @@ const Landing = () => {
 							</figcaption>
 						</figure>
 						<figure className="portfolio-item" data-groups='["design"]'>
-							<img src="assets/assets/photos/portfolio2.jpg" alt="" />
+							<img src="assets/photos/portfolio2.jpg" alt="" />
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
@@ -495,37 +523,14 @@ const Landing = () => {
 		</div>
 	</section>
 
-	<section className="clients">
-		<div className="container">
-			<div className="row">
-				<div className="col-md-12">
-					<div className="section-title st-center">
-							<h3>Some Of our clients</h3>
-							<p>Avocent deditum long</p>
-						</div> 
-					<ul className="clients-carousel">
-						<li><img src="assets/photos/client.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client2.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client3.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client4.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client5.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client6.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client7.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client8.png" className="img-responsive" alt=""/></li>
-						<li><img src="assets/photos/client9.png" className="img-responsive" alt=""/></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section className="testimonials">
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
 					<div className="testimonials-carousel">
-						<ul>
-							<li>
+						<ul className="owl-carousel owl-theme" style={carouselStyle}>
+							<div className="owl-wrapper-outer"><div className="owl-wrapper owl-origin" style={itemStyle}><div className="owl-item owl-backSlide-out" style={miEstilo}><li>
 								<div className="testimonial">
 									<div className="testimonial-img">
 										<img src="assets/photos/client.jpg" alt=""/>
@@ -536,8 +541,7 @@ const Landing = () => {
 										<footer>Joseph Thompson, <cite title="Source Title">Example Inc.</cite></footer>
 									</blockquote>
 								</div>
-							</li>
-							<li>
+							</li></div><div className="owl-item owl-backSlide-in" style={{width: 800}}><li>
 								<div className="testimonial">
 									<div className="testimonial-img">
 										<img src="assets/photos/client2.jpg" alt=""/>
@@ -549,8 +553,7 @@ const Landing = () => {
 										<footer>Nancy Ford, <cite title="Source Title">Example Inc.</cite></footer>
 									</blockquote>
 								</div>
-							</li>
-							<li>
+							</li></div><div className="owl-item" style={{width: 800}}><li>
 								<div className="testimonial">
 									<div className="testimonial-img">
 										<img src="assets/photos/client3.jpg" alt=""/>
@@ -561,8 +564,23 @@ const Landing = () => {
 										<footer>Arthur Fernandez, <cite title="Source Title">Example Inc.</cite></footer>
 									</blockquote>
 								</div>
-							</li>
-						</ul>
+							</li></div></div></div>
+							
+							
+						<div className="owl-controls clickable">
+							<div className="owl-pagination">
+								<div className="owl-page">
+									<span className=""></span>
+									</div>
+									<div className="owl-page active">
+										<span className=""></span>
+										</div>
+										<div className="owl-page">
+											<span className=""></span>
+											</div>
+											</div>
+											</div>
+											</ul>
 					</div>
 				</div>
 			</div>
@@ -987,19 +1005,6 @@ const Landing = () => {
 	</footer>
 
 	
-	<script src="assets/js/jquery.min.js"></script>
-	
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.easing.min.js"></script>
-	<script src="assets/js/jquery.stellar.js"></script>
-	<script src="assets/js/jquery.appear.js"></script>
-	<script src="assets/js/jquery.nicescroll.min.js"></script>
-	<script src="assets/js/jquery.countTo.js"></script>
-	<script src="assets/js/jquery.shuffle.modernizr.js"></script>
-	<script src="assets/js/jquery.shuffle.js"></script>
-	<script src="assets/js/owl.carousel.js"></script>
-	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-	<script src="assets/js/script.js"></script>
 </div>
 
 
