@@ -987,19 +987,19 @@ const Landing = () => {
 	</footer>
 
 	
-	<script src="js/jquery.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
 	
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/jquery.stellar.js"></script>
-	<script src="js/jquery.appear.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.shuffle.modernizr.js"></script>
-	<script src="js/jquery.shuffle.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/jquery.stellar.js"></script>
+	<script src="assets/js/jquery.appear.js"></script>
+	<script src="assets/js/jquery.nicescroll.min.js"></script>
+	<script src="assets/js/jquery.countTo.js"></script>
+	<script src="assets/js/jquery.shuffle.modernizr.js"></script>
+	<script src="assets/js/jquery.shuffle.js"></script>
+	<script src="assets/js/owl.carousel.js"></script>
+	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </div>
 
 
