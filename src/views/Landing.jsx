@@ -700,30 +700,6 @@ const Landing = () => {
 		</div>
 	</section>
 
-	<section className="subscribe">
-		<div className="container">
-			<div className="row">
-				<div className="col-md-12">
-					<h3 className="subscribe-title">Subscribe Newsletter</h3>
-					<form role="form" className="subscribe-form">
-						<div className="input-group">
-							<input type="email" className="form-control" id="mc-email" placeholder="Enter E-mail..."/>
-							<span className="input-group-btn">
-								<button className="btn btn-main btn-lg" type="submit">Subscribe!</button>
-							</span>
-						</div>
-					</form>
-					<div className="subscribe-result"></div>
-					<p className="subscribe-or">or</p>
-					<ul className="subscribe-social">
-						<li><a href="#" className="social twitter"><i className="fa fa-twitter"></i> Follow</a></li>
-						<li><a href="#" className="social facebook"><i className="fa fa-facebook"></i> Like</a></li>
-						<li><a href="#" className="social rss"><i className="fa fa-rss"></i> RSS</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section className="contact" id="contact">
       <div className="container">
