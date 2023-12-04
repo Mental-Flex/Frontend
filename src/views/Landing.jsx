@@ -2,6 +2,8 @@ import React from "react"
 
 
 
+
+
 const Landing = () => {
 
 	const sectionStyle = {
@@ -333,28 +335,29 @@ const Landing = () => {
 					<div className="row">
 						<div className="col-md-3">
 							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-cog"></i></div>
+								<div className="st-feature-icon"><i className="fa fa-coffee"></i></div>
+								<strong className="st-feature-title">Option Panel</strong>
+								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
+								
+							</div>
+						</div>
+						<div className="col-md-3">
+							<div className="st-feature">
+								<div className="st-feature-icon"><i className="fa fa-heart"></i></div>
 								<strong className="st-feature-title">Option Panel</strong>
 								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
 							</div>
 						</div>
 						<div className="col-md-3">
 							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-university"></i></div>
+								<div className="st-feature-icon"><i className="fa fa-graduation-cap"></i></div>
 								<strong className="st-feature-title">Option Panel</strong>
 								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
 							</div>
 						</div>
 						<div className="col-md-3">
 							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-comments-o"></i></div>
-								<strong className="st-feature-title">Option Panel</strong>
-								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
-							</div>
-						</div>
-						<div className="col-md-3">
-							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-life-ring"></i></div>
+								<div className="st-feature-icon"><i className="fa fa-home"></i></div>
 								<strong className="st-feature-title">Option Panel</strong>
 								<p>Pro adiuvet, honesto foris liberiusque statuat theseo scribimus mererer percurri geometria.</p>
 							</div>
@@ -365,23 +368,7 @@ const Landing = () => {
 		</div>
 	</section>
 
-	<section className="features-desc">
-		<div className="container">
-			<div className="row">
-				<div className="col-md-5">
-					<img src="assets/photos/feature.png" alt="" className="img-responsive"/>
-				</div>
-				<div className="col-md-7">
-					<h3 className="bottom-line">SOME OF OUR IMPORTANT FEATURES</h3>
-					<p>Graeci decore metrodorus conturbamur nostri alii veniamus temperantia audivi, discidia optari pariter
-						formidines nimis dissidens quosvis epicureis, iustitia inbecilloque cognoscerem remotis solet duce pondere,
-						stoicos amaret, faciam sic reperiuntur, timeam dedocere spatio censet cernantur dicas miseram alienum.
-						Attico fonte errem neque, causam nimium reliqui fana, duo sane consequi quos cogitarent dicant profecto.</p>
-					<a href="#" className="btn btn-main btn-lg">Read more</a>
-				</div>
-			</div>
-		</div>
-	</section>
+
 
 	<section className="call-2-acction" data-stellar-background-ratio="0.4">
 		<div className="container">
@@ -410,8 +397,7 @@ const Landing = () => {
 					<div className="filter mb40">
 						<form id="filter">
 							<fieldset className="group">
-								<label className="btn btn-default btn-main"><input type="radio" name="filter" value="all"
-										checked="checked"/>All</label>
+								<label className="btn btn-default btn-main"><input type="radio" name="filter" value="all" checked="checked"/>All</label>
 								<label className="btn btn-default"><input type="radio" name="filter" value="photography"/>Photography</label>
 								<label className="btn btn-default"><input type="radio" name="filter" value="design"/>Design</label>
 								<label className="btn btn-default"><input type="radio" name="filter" value="codding"/>Codding</label>
@@ -419,97 +405,97 @@ const Landing = () => {
 						</form>
 					</div>
 
-					<div className="grid">
-						<figure className="portfolio-item" data-groups='["photography"]'>
-							<img src="assets/photos/portfolio.jpg" alt="" />
+					<div className="grid shuffle" style={{position: 'relative', overflow: 'hidden', transition: 'height 250ms ease-out 0s', height: 888}}>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility:'visible', opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["design"]'>
-							<img src="assets/photos/portfolio2.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 0px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio2.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["photography"]'>
-							<img src="assets/photos/portfolio3.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 0px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio3.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["design"]'>
-							<img src="assets/photos/portfolio4.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(0px, 222px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio4.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["design"]'>
-							<img src="assets/photos/portfolio5.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 222px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio5.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["photography"]'>
-							<img src="assets/photos/portfolio6.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 222px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio6.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["codding"]'>
-							<img src="assets/photos/portfolio7.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(0px, 444px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio7.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["photography"]'>
-							<img src="assets/photos/portfolio8.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 444px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio8.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["codding"]'>
-							<img src="assets/photos/portfolio9.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 444px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio9.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["codding"]'>
-							<img src="assets/photos/portfolio10.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(0px, 666px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio10.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["design"]'>
-							<img src="assets/photos/portfolio11.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 666px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio11.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-						<figure className="portfolio-item" data-groups='["design"]'>
-							<img src="assets/photos/portfolio12.jpg" alt="" />
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 666px, 0px) scale3d(1, 1, 1)'}}>
+							<img src="assets/photos/portfolio12.jpg" alt=""/>
 							<figcaption>
 								<h2>Nice <span>Lily</span></h2>
 								<p>Lily likes to play with crayons and pencils</p>
@@ -522,7 +508,6 @@ const Landing = () => {
 			</div>
 		</div>
 	</section>
-
 
 	<section className="testimonials">
 		<div className="container">
@@ -815,101 +800,7 @@ const Landing = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-4">
-					<div className="widgets">
-						<div className="widget">
-							<form action="" className="">
-								<div className="input-group">
-									<input type="text" className="form-control" placeholder="Search..."/>
-									<span className="input-group-btn">
-										<button className="btn btn-default btn-lg" type="submit"><i className="fa fa-search"></i></button>
-									</span>
-								</div>
-							</form>
-						</div>
-						<div className="widget">
-							<h2 className="widget-title">Categories</h2>
-							<ul>
-								<li><a href="#">Video <span className="badge pull-right">5</span></a></li>
-								<li><a href="#">Flyer <span className="badge pull-right">7</span></a></li>
-								<li><a href="#">PSD <span className="badge pull-right">2</span></a></li>
-								<li><a href="#">Theme <span className="badge pull-right">6</span></a></li>
-								<li><a href="#">Music <span className="badge pull-right">8</span></a></li>
-								<li><a href="#">Bootstrap <span className="badge pull-right">2</span></a></li>
-								<li><a href="#">WordPress <span className="badge pull-right">9</span></a></li>
-								<li><a href="#">Framework <span className="badge pull-right">7</span></a></li>
-							</ul>
-						</div>
-						<div className="widget">
-							<h2 className="widget-title">Recent Post</h2>
-							<ul>
-								<li>
-									<div className="recent-post clearfix">
-										<a href="#" className="post-thumb"><img src="assets/photos/post-thumb-sm.jpg"/></a>
-										<h2 className="post-title">
-											<a href="#">A example blog post with image</a>
-										</h2>
-										<div className="post-meta">
-											<span>Posted in <a href="#">WordPress</a></span>
-										</div>
-
-									</div>
-								</li>
-								<li>
-									<div className="recent-post clearfix">
-										<a href="#" className="post-thumb"><img src="assets/photos/post-thumb-sm.jpg"/></a>
-										<h2 className="post-title">
-											<a href="#">A example blog post with image</a>
-										</h2>
-										<div className="post-meta">
-											<span>Posted in <a href="#">WordPress</a></span>
-										</div>
-
-									</div>
-								</li>
-								<li>
-									<div className="recent-post clearfix">
-										<a href="#" className="post-thumb"><img src="assets/photos/post-thumb-sm.jpg"/></a>
-										<h2 className="post-title">
-											<a href="#">A example blog post with image</a>
-										</h2>
-										<div className="post-meta">
-											<span>Posted in <a href="#">WordPress</a></span>
-										</div>
-
-									</div>
-								</li>
-								<li>
-									<div className="recent-post clearfix">
-										<a href="#" className="post-thumb"><img src="assets/photos/post-thumb-sm.jpg"/></a>
-										<h2 className="post-title">
-											<a href="#">A example blog post with image</a>
-										</h2>
-										<div className="post-meta">
-											<span>Posted in <a href="#">WordPress</a></span>
-										</div>
-
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div id="tag_cloud-3" className="widget widget_tag_cloud">
-							<h2 className="widget-title">Tags</h2>
-							<div className="tagcloud">
-								<a href="#">bootstrap3</a>
-								<a href="#">css</a>
-								<a href="#">html</a>
-								<a href="#">js</a>
-								<a href="#">php</a>
-								<a href="#">wordpress</a>
-								<a href="#">jquery</a>
-								<a href="#">less</a>
-								<a href="#">editor</a>
-								<a href="#">responsive</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -993,7 +884,7 @@ const Landing = () => {
 				<div className="col-md-12">
 					&copy; <a href="https://www.cantothemes.com">CantoThemes</a> 2015.
 					
-					Designed by <a href="https://www.cantothemes.com">CantoThemes</a>
+					Made by <a href="https://www.cantothemes.com">Sofia Franco</a>
 					
 				</div>
 				<div className="col-md-12">
@@ -1014,3 +905,141 @@ const Landing = () => {
 }
 
 export default Landing
+
+
+
+/*<section className="portfolio" id="portfolio">
+		<div className="container-fluid ">
+			<div className="row">
+				<div className="col-md-12 no-padding ">
+					<div className="section-title st-center">
+						<h3>What we have done</h3>
+						<p>Avocent deditum long</p>
+					</div>
+					<div className="filter mb40">
+						<form id="filter">
+							<fieldset className="group">
+								<label className="btn btn-default btn-main"><input type="radio" name="filter" value="all" checked="checked">All</label>
+								<label className="btn btn-default"><input type="radio" name="filter" value="photography">Photography</label>
+								<label className="btn btn-default"><input type="radio" name="filter" value="design">Design</label>
+								<label className="btn btn-default"><input type="radio" name="filter" value="codding">Codding</label>
+							</fieldset>
+						</form><!-- #filter -->
+					</div><!-- .filter .mb40 -->
+
+					<div className="grid shuffle" style="position: relative; overflow: hidden; transition: height 250ms ease-out 0s; height: 888px;">
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(418px, 0px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio2.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(836px, 0px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio3.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(0px, 222px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio4.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(418px, 222px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio5.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(836px, 222px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio6.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(0px, 444px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio7.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(418px, 444px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio8.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(836px, 444px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio9.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(0px, 666px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio10.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(418px, 666px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio11.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; visibility: visible; opacity: 1; transform: translate3d(836px, 666px, 0px) scale3d(1, 1, 1);">
+							<img src="photos/portfolio12.jpg" alt="">
+							<figcaption>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	*/
