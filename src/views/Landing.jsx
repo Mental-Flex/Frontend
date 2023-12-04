@@ -97,8 +97,8 @@ const Landing = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="section-title st-center">
-						<h3>WelCome to Sept</h3>
-						<p>We are a creative Designer</p>
+						<h3>WelCome to Mental Flex</h3>
+						<p>We are mental health specialists</p>
 					</div>
 					<div className="row mb90">
 						<div className="col-md-6">
