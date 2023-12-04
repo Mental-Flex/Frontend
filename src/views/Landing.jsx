@@ -74,11 +74,10 @@ const Landing = () => {
 				<div className="col-md-12">
 					<div className="st-home-unit" style={{ padding: '258px 0', opacity: 1 }}>
 						<div className="hero-txt">
-							<p className="hero-work">Web Design - Web Development - UX Design</p>
-							<h2 className="hero-title">BEST Template for Agency</h2>
-							<p className="hero-sub-title">We Provide Hight Quality Bootstrap Template</p> 
-							 <a href="#" className="btn btn-default btn-lg left-btn">Purchase Now</a> 
-							<a href="#" className="btn btn-main btn-lg">Find Out More</a>
+							<p className="hero-work">Healing process starts now</p>
+							<h2 className="hero-title">Innovate & contemporary psychotherapy</h2>
+							 <a href="#" className="btn btn-default btn-lg left-btn">Contact Us</a> 
+							
 						</div>
 
 					</div>
@@ -109,141 +108,27 @@ const Landing = () => {
 								inveniri fidelissimae aequi andriam laudabilis. Libido censet assiduitas quae probantur tantalo
 								exquisitaque erunt laudatur optari. Late suapte veterum enim qui magna securi eaque proficiscuntur.</p>
 						</div>
-						<div className="col-md-6">
-							<img src="assets/photos/about.jpg" alt="" className="img-responsive"/>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-md-4">
-							<div className="st-member">
-								<div className="st-member-img">
-									<img src="assets/photos/member1.png" alt="" className="img-responsive"/>
-								</div>
-								<div className="st-member-info">
-									<strong className="st-member-name">Jerry Ward</strong>
-									<p className="st-member-pos">CEO</p>
-									<div className="skills">
-										<div className="skill">
-											<strong>HTML</strong>
-											<span>90%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 90}}>
-													<span className="sr-only">90% Complete</span>
-												</div>
-											</div>
-										</div>
-										<div className="skill">
-											<strong>CSS</strong>
-											<span>70%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 70}}>
-													<span className="sr-only">70% Complete</span>
-												</div>
-											</div>
-										</div>
-										<div className="skill">
-											<strong>JavaScript</strong>
-											<span>86%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 86}}>
-													<span className="sr-only">86% Complete</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="st-member-social">
-										<ul>
-											<li><a href="#" className="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-														className="fa fa-facebook"></i></a></li>
-											<li><a href="#" className="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-														className="fa fa-twitter"></i></a></li>
-											<li><a href="#" className="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i
-														className="fa fa-dribbble"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="col-md-4">
-							<div className="st-member">
-								<div className="st-member-img">
-									<img src="assets/photos/member2.png" alt="" className="img-responsive"/>
-								</div>
-								<div className="st-member-info">
-									<strong className="st-member-name">Sarah Moore</strong>
-									<p className="st-member-pos">Designer</p>
-									<div className="skills">
-										<div className="skill">
-											<strong>HTML</strong>
-											<span>90%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 90}}>
-													<span className="sr-only">90% Complete</span>
-												</div>
-											</div>
-										</div>
-										<div className="skill">
-											<strong>CSS</strong>
-											<span>70%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 70}}>
-													<span className="sr-only">70% Complete</span>
-												</div>
-											</div>
-										</div>
-										<div className="skill">
-											<strong>JavaScript</strong>
-											<span>86%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 86}}>
-													<span className="sr-only">86% Complete</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="st-member-social">
-										<ul>
-											<li><a href="#" className="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-														className="fa fa-facebook"></i></a></li>
-											<li><a href="#" className="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-														className="fa fa-twitter"></i></a></li>
-											<li><a href="#" className="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i
-														className="fa fa-dribbble"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="col-md-4">
+										<div className="col-md-4">
 							<div className="st-member">
 								<div className="st-member-img">
 									<img src="assets/photos/member3.png" alt="" className="img-responsive"/>
 								</div>
 								<div className="st-member-info">
-									<strong className="st-member-name">Rose Johnson</strong>
-									<p className="st-member-pos">Developer</p>
+									<strong className="st-member-name">Mercedes Frias</strong>
+									<p className="st-member-pos">Clinical Psychology</p>
 									<div className="skills">
 										<div className="skill">
-											<strong>HTML</strong>
-											<span>90%</span>
+											<strong>clinic</strong>
+											<span>100%</span>
 											<div className="progress">
 												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90"
 													aria-valuemin="0" aria-valuemax="100" style={{width: 90}}>
-													<span className="sr-only">90% Complete</span>
+													<span className="sr-only">100% Complete</span>
 												</div>
 											</div>
 										</div>
 										<div className="skill">
-											<strong>CSS</strong>
+											<strong>couples</strong>
 											<span>70%</span>
 											<div className="progress">
 												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70"
@@ -253,7 +138,7 @@ const Landing = () => {
 											</div>
 										</div>
 										<div className="skill">
-											<strong>JavaScript</strong>
+											<strong>gender</strong>
 											<span>86%</span>
 											<div className="progress">
 												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86"
@@ -279,6 +164,16 @@ const Landing = () => {
 
 
 					</div>
+
+
+
+					</div>
+
+					<div className="row">
+					
+					
+
+		
 
 				</div>
 			</div>
