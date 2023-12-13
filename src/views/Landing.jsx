@@ -6,33 +6,6 @@ import React from "react"
 
 const Landing = () => {
 
-	const sectionStyle = {
-		backgroundPosition: '50% 0px',
-	  };
-
-
-	  const itemStyle = {
-		display: 'block',
-		width: '4800px',
-		left: '0px',
-		transition: 'all 0ms ease 0s',
-		transform: 'translate3d(-800px, 0px, 0px)',
-		transformOrigin: '1200px center',
-		perspectiveOrigin: '1200px center',
-	  };
-
-	  const carouselStyle = {
-		display: 'block',
-		opacity: 1,
-	  };
-
-
-	  const miEstilo = {
-		width: '800px',
-		position: 'relative',
-		left: '800px',
-	  };
-	
 
     return(
 
@@ -67,7 +40,7 @@ const Landing = () => {
 		</nav>
 	</header>
 
-	<section className="home" id="home" data-stellar-background-ratio="0.4" style={sectionStyle}>
+	<section className="home" id="home" data-stellar-background-ratio="0.4" style={{backgroundPosition: '50% 0px'}}>
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
@@ -408,8 +381,17 @@ const Landing = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="testimonials-carousel">
-						<ul className="owl-carousel owl-theme" style={carouselStyle}>
-							<div className="owl-wrapper-outer"><div className="owl-wrapper owl-origin" style={itemStyle}><div className="owl-item owl-backSlide-out" style={miEstilo}><li>
+						<ul className="owl-carousel owl-theme" style={{display: 'block',
+		opacity: 1}}>
+							<div className="owl-wrapper-outer"><div className="owl-wrapper owl-origin" style={{display: 'block',
+		width: '4800px',
+		left: '0px',
+		transition: 'all 0ms ease 0s',
+		transform: 'translate3d(-800px, 0px, 0px)',
+		transformOrigin: '1200px center',
+		perspectiveOrigin: '1200px center'}}><div className="owl-item owl-backSlide-out" style={{width: '800px',
+		position: 'relative',
+		left: '800px'}}><li>
 								<div className="testimonial">
 									<div className="testimonial-img">
 										<img src="assets/photos/client.jpg" alt=""/>
