@@ -75,7 +75,7 @@ const Landing = () => {
 						<div className="hero-txt">
 							<p className="hero-work">Healing process starts now</p>
 							<h2 className="hero-title">Innovate & contemporary psychotherapy</h2>
-							 <a href="#" className="btn btn-default btn-lg left-btn">Contact Us</a> 
+							 <a href="#contact" className="btn btn-default btn-lg left-btn">Contact Us</a> 
 							
 						</div>
 
@@ -151,10 +151,10 @@ const Landing = () => {
 										<ul>
 											<li><a href="#" className="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
 														className="fa fa-facebook"></i></a></li>
-											<li><a href="#" className="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-														className="fa fa-twitter"></i></a></li>
+											<li><a href="https://www.instagram.com/psi.mercedesfrias/" className="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+														className="fa fa-instagram"></i></a></li>
 											<li><a href="#" className="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i
-														className="fa fa-dribbble"></i></a></li>
+														className="fa fa-linkedin"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -272,7 +272,7 @@ const Landing = () => {
 						<h2>Omnibus reliquar rebus</h2>
 						<p>Evertitur depravatum illo tamquam novum, possent intus laudatur hinc grate aristoteli per splendido
 							soluta fabulae, ne aristippi cui deleniti nostros illud.</p>
-						<a href="#" className="btn btn-main btn-lg">Purchase Now</a>
+						
 					</div>
 				</div>
 			</div>
@@ -617,7 +617,7 @@ const Landing = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<h3>If you like to work with us</h3>
-					<a href="#" className="btn btn-default-o btn-lg">Call Us Now</a>
+					<a href="#contact" className="btn btn-default-o btn-lg">Call Us Now</a>
 				</div>
 			</div>
 		</div>
