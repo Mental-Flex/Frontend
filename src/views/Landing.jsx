@@ -60,7 +60,6 @@ const Landing = () => {
 						<li><a href="#service">Service</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#pricing">Pricing</a></li>
-						<li><a href="#blog">Blog</a></li>
 						<li><a href="#contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -623,82 +622,7 @@ const Landing = () => {
 			</div>
 		</div>
 	</section>
-	<section className="blog" id="blog">
-		<div className="container">
-			<div className="row">
-				<div className="col-md-12">
-					<div className="section-title st-center">
-						<h3>Recent News</h3>
-						<p>Some Recent News from Blog</p>
-					</div>
-				</div>
-			</div>
-			<div className="row">
-				<div className="col-md-8">
-					<div className="blog-post">
-						<div className="post-meta">
-							<span className="author"><a href="#"><img src="assets/photos/author.jpg" alt=""/> Raju Ahmmed</a></span>,
-							<span>Posted in <a href="#">WordPress</a></span>,
-							<span>At <strong>10 January, 2015</strong></span>
-						</div>
-						<h2 className="post-title"><a href="#">A example blog post with image</a></h2>
-						<div className="post-thumb"><a href="#"><img src="assets/photos/post-thumb.jpg" alt="" className="img-responsive"/></a>
-						</div>
-						<div className="post-content">
-							<p>Torquatos nihil utuntur liberamur benivole epularum evertunt accommodare, democrito didicerimus occulta
-								egregios, praeclaram familiaritatem novi accusamus delectus opinemur mutae expetenda perpauca eas,
-								concederetur fecerit ignorare delectari industria patientiamque. Invenire probes contereret maior opinor
-								iucundo inciderint depravate, concupiscunt, deorum didicerimus, solitudo ingeniis confectum attento
-								illustribus. Quanta suam, quieti usu necessarius. Sapienter existimo fruenda contentiones deduceret
-								dolere minuti animi scientia, inbecilloque servire evertunt. Exeduntur vivi laudatum dicitur omnia
-								verterem fuerit inanitate efficiatur <a href="#" className="more-link">Continue reading <span
-										className="meta-nav">&rarr;</span></a></p>
-						</div>
-					</div>
-					<div className="blog-post">
-						<div className="post-meta">
-							<span className="author"><a href="#"><img src="assets/photos/author.jpg" alt=""/> Raju Ahmmed</a></span>,
-							<span>Posted in <a href="#">WordPress</a></span>,
-							<span>At <strong>10 January, 2015</strong></span>
-						</div>
-						<h2 className="post-title"><a href="#">A example blog post with image</a></h2>
-						<div className="post-thumb"><a href="#"><img src="assets/photos/post-thumb.jpg" alt="" className="img-responsive"/></a>
-						</div>
-						<div className="post-content">
-							<p>Torquatos nihil utuntur liberamur benivole epularum evertunt accommodare, democrito didicerimus occulta
-								egregios, praeclaram familiaritatem novi accusamus delectus opinemur mutae expetenda perpauca eas,
-								concederetur fecerit ignorare delectari industria patientiamque. Invenire probes contereret maior opinor
-								iucundo inciderint depravate, concupiscunt, deorum didicerimus, solitudo ingeniis confectum attento
-								illustribus. Quanta suam, quieti usu necessarius. Sapienter existimo fruenda contentiones deduceret
-								dolere minuti animi scientia, inbecilloque servire evertunt. Exeduntur vivi laudatum dicitur omnia
-								verterem fuerit inanitate efficiatur <a href="#" className="more-link">Continue reading <span
-										className="meta-nav">&rarr;</span></a></p>
-						</div>
-					</div>
-					<div className="blog-post">
-						<div className="post-meta">
-							<span className="author"><a href="#"><img src="assets/photos/author.jpg" alt=""/> Raju Ahmmed</a></span>,
-							<span>Posted in <a href="#">WordPress</a></span>,
-							<span>At <strong>10 January, 2015</strong></span>
-						</div>
-						<h2 className="post-title"><a href="#">A example blog post without image</a></h2>
-						<div className="post-content">
-							<p>Torquatos nihil utuntur liberamur benivole epularum evertunt accommodare, democrito didicerimus occulta
-								egregios, praeclaram familiaritatem novi accusamus delectus opinemur mutae expetenda perpauca eas,
-								concederetur fecerit ignorare delectari industria patientiamque. Invenire probes contereret maior opinor
-								iucundo inciderint depravate, concupiscunt, deorum didicerimus, solitudo ingeniis confectum attento
-								illustribus. Quanta suam, quieti usu necessarius. Sapienter existimo fruenda contentiones deduceret
-								dolere minuti animi scientia, inbecilloque servire evertunt. Exeduntur vivi laudatum dicitur omnia
-								verterem fuerit inanitate efficiatur <a href="#" className="more-link">Continue reading <span
-										className="meta-nav">&rarr;</span></a></p>
-
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
+	
 
 
 	<section className="contact" id="contact">
