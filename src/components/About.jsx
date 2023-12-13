@@ -97,9 +97,9 @@ const About = () => {
 										<ul>
 											<li><a href="#" className="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i
 														className="fa fa-facebook"></i></a></li>
-											<li><a href="https://www.instagram.com/psi.mercedesfrias/" className="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+											<li><a href="https://www.instagram.com/psi.mercedesfrias/" className="twitter" data-toggle="tooltip" data-placement="top" title="Instagram"><i
 														className="fa fa-instagram"></i></a></li>
-											<li><a href="#" className="dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble"><i
+											<li><a href="#" className="dribbble" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i
 														className="fa fa-linkedin"></i></a></li>
 										</ul>
 									</div>
