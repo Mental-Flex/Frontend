@@ -1,7 +1,9 @@
-import React from "react"
+import React, {useEffect} from "react"
 
 
 const Blog = () => {
+
+	
 
     return(
 
@@ -34,6 +36,8 @@ const Blog = () => {
                     </div>
                 </div>
             </nav>
+
+			
         </header>
     
         <section className="portfolio" id="portfolio">
@@ -158,6 +162,9 @@ const Blog = () => {
 			</div>
 		</div>
 	</section>
+
+
+	
 
         </div>
     
