@@ -65,7 +65,25 @@ const Pricing = () => {
 							</ul>
 						</div>
 						<div className="pricing-footer">
-							<a href="#" className="btn btn-default">Purchase</a>
+							
+							<button
+            onClick={async() => {
+
+				const response = await fetch('http://localhost:3000/payment/createOrder1', {
+
+					method: 'POST'
+
+				})
+
+				const data = await response.json()
+				window.location.href = data.links[1].href
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           Purchase
+          </button>
 						</div>
 					</div>
 				</div>
@@ -87,7 +105,24 @@ const Pricing = () => {
 							</ul>
 						</div>
 						<div className="pricing-footer">
-							<a href="#" className="btn btn-default">Purchase</a>
+						<button
+            onClick={async() => {
+
+				const response = await fetch('http://localhost:3000/payment/createOrder2', {
+
+					method: 'POST'
+
+				})
+
+				const data = await response.json()
+				window.location.href = data.links[1].href
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           Purchase
+          </button>
 						</div>
 					</div>
 				</div>
@@ -110,7 +145,24 @@ const Pricing = () => {
 							</ul>
 						</div>
 						<div className="pricing-footer">
-							<a href="#" className="btn btn-main">Purchase</a>
+						<button
+            onClick={async() => {
+
+				const response = await fetch('http://localhost:3000/payment/createOrder3', {
+
+					method: 'POST'
+
+				})
+
+				const data = await response.json()
+				window.location.href = data.links[1].href
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           Purchase
+          </button>
 						</div>
 					</div>
 				</div>
@@ -132,7 +184,24 @@ const Pricing = () => {
 							</ul>
 						</div>
 						<div className="pricing-footer">
-							<a href="#" className="btn btn-default">Purchase</a>
+						<button
+            onClick={async() => {
+
+				const response = await fetch('http://localhost:3000/payment/createOrder4', {
+
+					method: 'POST'
+
+				})
+
+				const data = await response.json()
+				window.location.href = data.links[1].href
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           Purchase
+          </button>
 						</div>
 					</div>
 				</div>
