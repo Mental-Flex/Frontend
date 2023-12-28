@@ -1,7 +1,43 @@
 import React from "react"
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { useForm } from "react-hook-form";
 
 
 const Contact = () => {
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    mode: "all",
+  });
+
+  
+
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0xktgv9', 'template_zh48eso', form.current, 'bKkeZdeJY75nVnQm4')
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      toast.success("Email send succesfully", {
+        position: "bottom-left",
+      }),
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  reset();
+  };
 
     return(
 
@@ -48,12 +84,40 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-md-6">
-            <form className="contact-form" role="form">
-              <input type="text" className="form-control" id="fname" name="fname" placeholder="Your Full Name" />
-              <input type="email" className="form-control" id="email" name="email" placeholder="Your E-mail" />
-              <input type="text" className="form-control" id="subj" name="subj" placeholder="Your Subject" />
-              <textarea id="mssg" name="mssg" placeholder="Your Message" className="form-control" rows="10" />
-              <button className="btn btn-main btn-lg" type="submit" id="send" data-loading-text="<i className='fa fa-spinner fa-spin'></i> Sending...">
+            <form className="contact-form" role="form" ref={form} onSubmit={sendEmail}>
+              <input type="text" className="form-control" id="fname" name="user_name" placeholder="Your Full Name"
+              {...register("user_name", {
+                required: "Username is required",
+                minLength: {
+                  value: 3,
+                  message: "Username must be atleast 3 charracters long",
+                },
+              })} />
+               <p className="contact-form "> {errors.user_name?.message}</p>
+              <input type="email" className="form-control" id="email" name="user_email" placeholder="Your E-mail"
+               {...register("user_email", {
+                required: "Email is required",
+                pattern: {
+                  value:
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                  message: "Email must be valid",
+                },
+              })} />
+              <p className="contact-form ">{errors.user_email?.message}</p>
+              <textarea id="mssg" name="message" placeholder="Your Message" className="form-control" rows="10"
+              {...register("Message", {
+                required: "Message is required",
+                minLength: {
+                  value: 15,
+                  message: "Message must be atleast 15 charracters long",
+                },
+                maxLength: {
+                  value: 150,
+                  message: "Message must be less than 150 charracters",
+                },
+              })} />
+              <p className="contact-form"> {errors.Message?.message}</p>
+              <button className="btn btn-main btn-lg" type="submit" value="send" data-loading-text="<i className='fa fa-spinner fa-spin'></i> Sending...">
                 <i className="fa fa-paper-plane "></i>
                 Send
               </button>
