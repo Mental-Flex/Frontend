@@ -5,39 +5,28 @@ import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 
 
+
 const Contact = () => {
-
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm({
-    mode: "all",
-  });
-
-  
-
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_0xktgv9', 'template_zh48eso', form.current, 'bKkeZdeJY75nVnQm4')
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      toast.success("Email send succesfully", {
-        position: "bottom-left",
-      }),
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  reset();
+    emailjs.sendForm('service_0xktgv9', 'template_iaj1yd3', form.current, 'bKkeZdeJY75nVnQm4')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
+
+
+
+
+
+
+
 
     return(
 
@@ -84,8 +73,22 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-md-6">
-            <form className="contact-form" role="form" ref={form} onSubmit={sendEmail}>
-              <input type="text" className="form-control" id="sendername" name="sendername" placeholder="Your Full Name"
+
+
+          <form  className="contact-form"ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+
+
+            {/* <form className="contact-form" ref={form}
+            onSubmit={handleSubmit(sendEmail)}>
+              <input type="text" className="form-control"  name="user_name" placeholder="Your Full Name"
               {...register("user_name", {
                 required: "Username is required",
                 minLength: {
@@ -94,7 +97,7 @@ const Contact = () => {
                 },
               })} />
                <p className="contact-form "> {errors.user_name?.message}</p>
-              <input type="email" className="form-control" id="email" name="user_email" placeholder="Your E-mail"
+              <input type="email" className="form-control"  name="user_email" placeholder="Your E-mail"
                {...register("user_email", {
                 required: "Email is required",
                 pattern: {
@@ -104,7 +107,7 @@ const Contact = () => {
                 },
               })} />
               <p className="contact-form ">{errors.user_email?.message}</p>
-              <textarea id="message" name="message" placeholder="Your Message" className="form-control" rows="10"
+              <textarea  name="message" placeholder="Your Message" className="form-control" rows="10"
               {...register("Message", {
                 required: "Message is required",
                 minLength: {     
@@ -121,7 +124,7 @@ const Contact = () => {
                 <i className="fa fa-paper-plane "></i>
                 Send
               </button>
-            </form>
+            </form> */}
             <div id="result-message" role="alert"></div>
           </div>
           <div className="col-md-6">
