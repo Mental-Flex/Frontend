@@ -85,7 +85,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-6">
             <form className="contact-form" role="form" ref={form} onSubmit={sendEmail}>
-              <input type="text" className="form-control" id="fname" name="user_name" placeholder="Your Full Name"
+              <input type="text" className="form-control" id="sendername" name="sendername" placeholder="Your Full Name"
               {...register("user_name", {
                 required: "Username is required",
                 minLength: {
@@ -104,10 +104,10 @@ const Contact = () => {
                 },
               })} />
               <p className="contact-form ">{errors.user_email?.message}</p>
-              <textarea id="mssg" name="message" placeholder="Your Message" className="form-control" rows="10"
+              <textarea id="message" name="message" placeholder="Your Message" className="form-control" rows="10"
               {...register("Message", {
                 required: "Message is required",
-                minLength: {
+                minLength: {     
                   value: 15,
                   message: "Message must be atleast 15 charracters long",
                 },
