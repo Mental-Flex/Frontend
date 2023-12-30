@@ -92,7 +92,7 @@ const Contact = () => {
       <label >Name</label>
       <input className="form-control" type="text" name="user_name" />
       <label>Email</label>
-      <input className="form-control" type="email" name="user_email" />
+      <input className="form-control" type="email" name="user_email"  />
       <label>Message</label>
       <textarea className="form-control" rows="10"  name="message" />
       <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i class="fa fa-paper-plane "></i>
