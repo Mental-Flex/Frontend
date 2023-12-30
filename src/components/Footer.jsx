@@ -40,15 +40,12 @@ const Footer = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					&copy; <a href="https://www.cantothemes.com">CantoThemes</a> 2015.
+					&copy; <a href="https://www.cantothemes.com">Mental Flex</a> 2023.
 					
-					Made by <a href="https://www.cantothemes.com">Sofia Franco</a>
+					Made by <a href="https://www.cantothemes.com">Sofia Victoria Franco</a>
 					
 				</div>
-				<div className="col-md-12">
-					Distributed by <a href="https://themewagon.com/">Themewagon</a>
-
-				</div>
+				
 			</div>
 		</div>
 	</footer>

@@ -1,6 +1,8 @@
 
 import './App.css';
+
 import Landing from './views/Landing';
+import { Route, Routes } from "react-router-dom";
 
 
 
@@ -11,7 +13,9 @@ function App() {
 
     <>
 
-    <Landing/>
+   <Landing/>
+
+    
     
     </>
 
