@@ -89,14 +89,16 @@ const Contact = () => {
 
 
           <form  className="contact-form"ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
+      <label >Name</label>
+      <input className="form-control" type="text" name="user_name" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input className="form-control" type="email" name="user_email" />
       <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <textarea className="form-control" rows="10"  name="message" />
+      <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i class="fa fa-paper-plane "></i>
+							Send</button>
     </form>
+
 
 
       
