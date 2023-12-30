@@ -1,8 +1,8 @@
 import React from "react"
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
-import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -10,17 +10,30 @@ const Contact = () => {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_0xktgv9', 'template_iaj1yd3', form.current, 'bKkeZdeJY75nVnQm4')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+  
+    try {
+      const result = await emailjs.sendForm(
+        'service_0xktgv9',
+        'template_iaj1yd3',
+        form.current,
+        'bKkeZdeJY75nVnQm4'
+      );
+  
+      console.log(result.text);
+      form.current.reset();
+      toast.success('Email sent successfully', {
+        position: 'bottom-left',
       });
+    } catch (error) {
+      console.log(error.text);
+      toast.error('Failed to send email', {
+        position: 'bottom-left',
+      });
+    }
   };
-
+  
 
 
 
@@ -86,45 +99,7 @@ const Contact = () => {
     </form>
 
 
-            {/* <form className="contact-form" ref={form}
-            onSubmit={handleSubmit(sendEmail)}>
-              <input type="text" className="form-control"  name="user_name" placeholder="Your Full Name"
-              {...register("user_name", {
-                required: "Username is required",
-                minLength: {
-                  value: 3,
-                  message: "Username must be atleast 3 charracters long",
-                },
-              })} />
-               <p className="contact-form "> {errors.user_name?.message}</p>
-              <input type="email" className="form-control"  name="user_email" placeholder="Your E-mail"
-               {...register("user_email", {
-                required: "Email is required",
-                pattern: {
-                  value:
-                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                  message: "Email must be valid",
-                },
-              })} />
-              <p className="contact-form ">{errors.user_email?.message}</p>
-              <textarea  name="message" placeholder="Your Message" className="form-control" rows="10"
-              {...register("Message", {
-                required: "Message is required",
-                minLength: {     
-                  value: 15,
-                  message: "Message must be atleast 15 charracters long",
-                },
-                maxLength: {
-                  value: 150,
-                  message: "Message must be less than 150 charracters",
-                },
-              })} />
-              <p className="contact-form"> {errors.Message?.message}</p>
-              <button className="btn btn-main btn-lg" type="submit" value="send" data-loading-text="<i className='fa fa-spinner fa-spin'></i> Sending...">
-                <i className="fa fa-paper-plane "></i>
-                Send
-              </button>
-            </form> */}
+      
             <div id="result-message" role="alert"></div>
           </div>
           <div className="col-md-6">
