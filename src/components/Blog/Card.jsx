@@ -9,9 +9,9 @@ const Card = (props) => {
   const imageStyle = {
     maxWidth: "100%",
     height: "auto",
-    width: "100%", // Añadir este estilo para asegurar que todas las imágenes tengan el mismo ancho
-    objectFit: "cover", // Añadir este estilo para que las imágenes se ajusten y recorten según sea necesario
-    borderRadius: '8px', // Puedes ajustar esto según sea necesario
+    width: "100%", 
+    objectFit: "cover", 
+    borderRadius: '8px', 
   };
 
   return (

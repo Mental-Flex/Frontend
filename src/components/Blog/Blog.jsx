@@ -1,6 +1,6 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { getAllPublications } from "../../redux/actions"
+import { filterByCategory, getAllPublications, getCategories } from "../../redux/actions"
 import CardsContainer from "../Blog/CardsContainer"
 import { useEffect} from "react"
 
@@ -9,11 +9,30 @@ const Blog = () => {
 
 	const dispatch = useDispatch()
     const publications = useSelector(state => state.publications)
+	const categories = useSelector(state => state.categories)
+	const filtered = useSelector(state => state.filtered)
     
 
     useEffect(()=>{
         dispatch(getAllPublications())
     },[dispatch])
+
+	useEffect(()=>{
+        dispatch(getCategories())
+    },[dispatch])
+
+
+	const filter = (event) => {
+
+       
+        const value = event.target.value
+       
+            dispatch(filterByCategory(value))
+        
+       
+    }
+
+	console.log(filtered)
 
     
 
@@ -68,117 +87,31 @@ const Blog = () => {
 
 					 <div className="filter mb40">
 						<form id="filter">
-							<fieldset className="group">
-								<label className="btn btn-default btn-main"><input type="radio" name="filter" value="all" checked="checked"/>All</label>
-								<label className="btn btn-default"><input type="radio" name="filter" value="photography"/>Photography</label>
-								<label className="btn btn-default"><input type="radio" name="filter" value="design"/>Design</label>
-								<label className="btn btn-default"><input type="radio" name="filter" value="codding"/>Codding</label>
+							<fieldset className="group" name="category" onClick={(e) => filter(e)} >
+							<label className="btn btn-default"><input type="radio" name="filter" value="All"/>All</label>
+
+								{categories?.map((c) => {
+            return (
+             
+
+			  <label className="btn btn-default"><input type="radio" name="filter" value={c.name}/>{c.name}</label>
+            );
+          })}
+								
+								
 							</fieldset>
 						</form>
 					</div>
 
-					<CardsContainer publications={publications} />
+				
+        
+
+                   
+					<CardsContainer publications={filtered} />
 
 
 
-					{/* <div className="grid shuffle" style={{position: 'relative', overflow: 'hidden', transition: 'height 250ms ease-out 0s', height: 888}}>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility:'visible', opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 0px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio2.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 0px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio3.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(0px, 222px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio4.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 222px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio5.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 222px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio6.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(0px, 444px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio7.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 444px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio8.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 444px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio9.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;codding&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(0px, 666px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio10.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(418px, 666px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio11.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;design&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s opacity 250ms ease-out 0s', visibility: 'visible', opacity: 1, transform: 'translate3d(836px, 666px, 0px) scale3d(1, 1, 1)'}}>
-							<img src="assets/photos/portfolio12.jpg" alt=""/>
-							<figcaption>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
-							</figcaption>
-						</figure>
-					</div>  */}
+				
 
 				</div>
 			</div>
