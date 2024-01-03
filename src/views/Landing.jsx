@@ -4,7 +4,7 @@ import About from '../components/About';
 import Funfacts from '../components/Funfacts';
 import Services from '../components/Services';
 import Phrase from '../components/Phrase';
-import Blog from '../components/Blog';
+import Blog from '../components/Blog/Blog';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import Questions from '../components/Questions';

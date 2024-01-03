@@ -1,7 +1,21 @@
-import React, {useEffect} from "react"
+import React from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { getAllPublications } from "../../redux/actions"
+import CardsContainer from "../Blog/CardsContainer"
+import { useEffect} from "react"
 
 
 const Blog = () => {
+
+	const dispatch = useDispatch()
+    const publications = useSelector(state => state.publications)
+    
+
+    useEffect(()=>{
+        dispatch(getAllPublications())
+    },[dispatch])
+
+    
 
 	
 
@@ -48,7 +62,11 @@ const Blog = () => {
 						<h3>What we have done</h3>
 						<p>Avocent deditum long</p>
 					</div>
-					<div className="filter mb40">
+
+
+
+
+					 <div className="filter mb40">
 						<form id="filter">
 							<fieldset className="group">
 								<label className="btn btn-default btn-main"><input type="radio" name="filter" value="all" checked="checked"/>All</label>
@@ -59,7 +77,11 @@ const Blog = () => {
 						</form>
 					</div>
 
-					<div className="grid shuffle" style={{position: 'relative', overflow: 'hidden', transition: 'height 250ms ease-out 0s', height: 888}}>
+					<CardsContainer publications={publications} />
+
+
+
+					{/* <div className="grid shuffle" style={{position: 'relative', overflow: 'hidden', transition: 'height 250ms ease-out 0s', height: 888}}>
 						<figure className="portfolio-item shuffle-item filtered" data-groups="[&quot;photography&quot;]" style={{position: 'absolute', top: 0, left: 0, transition: 'transform 250ms ease-out 0s, opacity 250ms ease-out 0s', visibility:'visible', opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1)'}}>
 							<img src="assets/photos/portfolio.jpg" alt=""/>
 							<figcaption>
@@ -156,7 +178,7 @@ const Blog = () => {
 								<a href="#" className="btn btn-main"><i className="fa fa-link"></i> View more</a>
 							</figcaption>
 						</figure>
-					</div>
+					</div>  */}
 
 				</div>
 			</div>
