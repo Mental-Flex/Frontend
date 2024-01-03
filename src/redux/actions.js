@@ -5,7 +5,7 @@ export const GET_PUBLICATIONS = 'GET_PUBLICATIONS'
 export function getAllPublications() {
 
     return (dispatch) => {
-        return axios('/publications/')
+        return axios('http://localhost:3000/publications/')
         .then(res => dispatch({
             type: GET_PUBLICATIONS,
             payload: res.data
