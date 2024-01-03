@@ -1,11 +1,17 @@
 import React from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector} from "react-redux"
 import { filterByCategory, getAllPublications, getCategories } from "../../redux/actions"
 import CardsContainer from "../Blog/CardsContainer"
-import { useEffect} from "react"
+import { useEffect, useState} from "react"
 
 
 const Blog = () => {
+
+	const [selectedFilter, setSelectedFilter] = useState('All');
+
+  const handleFilterChange = (value) => {
+    setSelectedFilter(value);
+  };
 
 	const dispatch = useDispatch()
     const publications = useSelector(state => state.publications)
@@ -26,6 +32,8 @@ const Blog = () => {
 
        
         const value = event.target.value
+
+		handleFilterChange(value);
        
             dispatch(filterByCategory(value))
         
