@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const cardStyle = {
-    // ...otros estilos
+   cursor: "auto"
   };
 
   const imageStyle = {
@@ -20,9 +20,10 @@ const Card = (props) => {
       <figcaption>
        
           <p style={{ margin: '8px 0', fontWeight: 'bold' }}>{props.name}</p>
-          <a href="" className="btn btn-main">
-            <i className="fa fa-link"></i> View more
-          </a>
+          <Link to="/detail" className="btn btn-main">
+          <i className="fa fa-link"></i> View more
+        </Link>
+            
         
       </figcaption>
     </figure>
