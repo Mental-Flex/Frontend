@@ -12,6 +12,9 @@ import CallUs from '../components/CallUs';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+import { Route, Routes, useLocation} from 'react-router-dom';
+import Detail from "../components/Detail";
+
 
 
 
@@ -35,6 +38,20 @@ const Landing = () => {
       <CallUs/>
       <Contact/>
       <Footer/>
+
+
+     
+
+    <Routes>
+     
+      <Route exact path='/detail' element={<Detail/>} />
+      
+    </Routes>
+
+      
+
+
+      
 
   
 
