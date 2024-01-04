@@ -26,27 +26,25 @@ const Landing = () => {
 
 		<>
 
-      <Home/>
-      <About/>
-      <Funfacts/>
-      <Services/>
-      <Phrase/>
-      <Blog/>
-      <Testimonials/>
-      <Pricing/>
-      <Questions/>
-      <CallUs/>
-      <Contact/>
-      <Footer/>
-
-
-     
-
-    <Routes>
-     
-      <Route exact path='/detail' element={<Detail/>} />
-      
-    </Routes>
+<Routes>
+                <Route path="/" element={
+                    <>
+                        <Home />
+                        <About />
+                        <Funfacts />
+                        <Services />
+                        <Phrase />
+                        <Blog />
+                        <Testimonials />
+                        <Pricing />
+                        <Questions />
+                        <CallUs />
+                        <Contact />
+                        <Footer />
+                    </>
+                } />
+                <Route path='/detail' element={<Detail />} />
+            </Routes>
 
       
 
