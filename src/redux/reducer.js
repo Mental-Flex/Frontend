@@ -21,6 +21,8 @@ function reducer(state= initialState, {type, payload}) {
 
             case FILTER_BY_CATEGORY:
                 let filteredPublications;
+
+                
                 
                 if (state.publications.length > 0) {
                   filteredPublications = payload === 'All'

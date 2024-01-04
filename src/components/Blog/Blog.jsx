@@ -8,18 +8,22 @@ import { useEffect, useState} from "react"
 const Blog = () => {
 
 	const [selectedFilter, setSelectedFilter] = useState('All');
+	const [originalPublications, setOriginalPublications] = useState([]);
 
   const handleFilterChange = (value) => {
     setSelectedFilter(value);
+	
   };
 
 	const dispatch = useDispatch()
     const publications = useSelector(state => state.publications)
 	const categories = useSelector(state => state.categories)
 	const filtered = useSelector(state => state.filtered)
+
+	
     
 
-    useEffect(()=>{
+     useEffect(()=>{
         dispatch(getAllPublications())
     },[dispatch])
 
@@ -27,6 +31,7 @@ const Blog = () => {
         dispatch(getCategories())
     },[dispatch])
 
+	
 
 	const filter = (event) => {
 
@@ -40,9 +45,11 @@ const Blog = () => {
        
     }
 
-	console.log(filtered)
+	
 
-    
+    console.log("aca")
+    console.log(filtered)
+	console.log(publications)
 
 	
 
@@ -111,11 +118,13 @@ const Blog = () => {
 						</form>
 					</div>
 
+					
+
 				
         
 
                    
-					<CardsContainer publications={filtered} />
+					<CardsContainer publications={filtered.length == 0? publications : filtered} />
 
 
 

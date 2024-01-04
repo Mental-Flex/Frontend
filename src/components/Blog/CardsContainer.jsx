@@ -23,7 +23,7 @@ const CardsContainer = (props) => {
               name={e.name}
               description={e.description}
               image={e.image}
-              transform={e.transform}
+             
             />
           </CSSTransition>
         ))}
