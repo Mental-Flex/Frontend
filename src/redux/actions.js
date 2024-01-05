@@ -2,6 +2,7 @@ import axios from 'axios'
 export const GET_PUBLICATIONS = 'GET_PUBLICATIONS'
 export const FILTER_BY_CATEGORY = 'FILTER_BY_CATEGORY'
 export const GET_CATEGORIES = 'GET_CATEGORIES'
+export const CREATE_USER = 'CREATE_USER'
 
 
 export function getAllPublications() {
@@ -45,6 +46,9 @@ export const filterByCategory = (value) => {
         });
     }
   }
+
+
+  
 
 
 

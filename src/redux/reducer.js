@@ -46,6 +46,9 @@ function reducer(state= initialState, {type, payload}) {
                     categories: payload,
     
                 }
+
+
+                
     
 
            

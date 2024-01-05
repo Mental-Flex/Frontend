@@ -110,6 +110,8 @@ const Blog = () => {
 			  <label className="btn btn-default"><input type="radio" name="filter" value={c.name}/>{c.name}</label>
             );
           })}
+
+          
 								
 								
 							</fieldset>

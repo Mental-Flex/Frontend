@@ -1,5 +1,6 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { useAuth0 } from "@auth0/auth0-react";
+import axios from 'axios'
 
 
 const Home = () => {
@@ -10,6 +11,27 @@ const Home = () => {
     const handleLogout = () => {
         logout({ returnTo: window.location.origin });
       };
+
+
+      useEffect(()=>{
+       if(user && isAuthenticated){
+
+        try{
+            console.log(user.name)
+            axios.post('http://localhost:3000/auth/', user.name)
+                
+        }catch(error) {
+                    
+                    alert('No se puede crear el usuario');
+                };
+            }
+    },[user])
+
+     
+        
+          
+        
+      
 
     return(
 
@@ -60,7 +82,19 @@ const Home = () => {
               
             
              <button className="btn btn-default btn-lg left-btn" onClick={loginWithPopup}>LOGIN</button>
-          )}
+             
+          )
+
+          
+          
+          }
+
+
+          
+
+
+
+
                                 
                                  {isAuthenticated && (
               
