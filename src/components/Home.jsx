@@ -1,7 +1,11 @@
 import React from "react"
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 const Home = () => {
+
+    let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
+    const {loginWithRedirect} = useAuth0
 
     return(
 
@@ -25,12 +29,15 @@ const Home = () => {
                     <div className="collapse navbar-collapse main-nav" id="sept-main-nav">
                         <ul className="nav navbar-nav navbar-right">
                             <li className="active"><a href="#home">Home</a></li>
+                            
                             <li><a href="#about">About</a></li>
                             <li><a href="#service">Services</a></li>
                             <li><a href="#portfolio">Blog</a></li>
                             <li><a href="#pricing">Pricing</a></li>
                             <li><a href="#contact">Contact Us</a></li>
+                            
                         </ul>
+                        
                     </div>
                 </div>
             </nav>
@@ -45,6 +52,7 @@ const Home = () => {
                                 <p className="hero-work">Healing process starts now</p>
                                 <h2 className="hero-title">Innovate & contemporary psychotherapy</h2>
                                  <a href="#contact" className="btn btn-default btn-lg left-btn">Contact Us</a> 
+                                 <button className="btn btn-default btn-lg left-btn" onClick={loginWithPopup}>LOGIN</button>
                                 
                             </div>
     
