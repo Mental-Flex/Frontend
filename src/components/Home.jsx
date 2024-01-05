@@ -7,6 +7,10 @@ const Home = () => {
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
     const {loginWithRedirect} = useAuth0
 
+    const handleLogout = () => {
+        logout({ returnTo: window.location.origin });
+      };
+
     return(
 
         <div data-spy="scroll" data-target=".main-nav">
@@ -52,7 +56,23 @@ const Home = () => {
                                 <p className="hero-work">Healing process starts now</p>
                                 <h2 className="hero-title">Innovate & contemporary psychotherapy</h2>
                                  <a href="#contact" className="btn btn-default btn-lg left-btn">Contact Us</a> 
-                                 <button className="btn btn-default btn-lg left-btn" onClick={loginWithPopup}>LOGIN</button>
+                                 {!isAuthenticated && (
+              
+            
+             <button className="btn btn-default btn-lg left-btn" onClick={loginWithPopup}>LOGIN</button>
+          )}
+                                
+                                 {isAuthenticated && (
+              
+                <button
+                  onClick={handleLogout}
+                  className="btn btn-default btn-lg left-btn"
+                >
+                    LOGUOT
+
+                </button>
+              
+            )}
                                 
                             </div>
     
