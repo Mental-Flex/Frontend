@@ -8,7 +8,7 @@ import { useEffect, useState} from "react"
 const Blog = () => {
 
     // voy a preguntar si esta autenticado y si hay user y si si voy a llamar a getuser del backend para que me traiga
-    //  el usuario role y si role es admin voy a poner un boton que me lleve a un formulario para publicar blog, luego voy
+    //  el usuario role y si role es admin voy a poner un boton (en un side bar) que me lleve a un formulario para publicar blog, luego voy
     //   a hacer el detalle de cada blog
 
 	const [selectedFilter, setSelectedFilter] = useState('All');
