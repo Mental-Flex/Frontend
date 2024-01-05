@@ -18,7 +18,8 @@ const Home = () => {
 
         try{
             console.log(user.name)
-            axios.post('http://localhost:3000/auth/', user.name)
+            const username = user.name
+            axios.post('http://localhost:3000/auth/', {username: user.name})
                 
         }catch(error) {
                     
