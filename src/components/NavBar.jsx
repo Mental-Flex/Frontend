@@ -5,10 +5,13 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import { IconContext } from 'react-icons';
 import './Navbar.css'
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 
 const NavBar = () => {
+
+    let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
 
     const [sidebar, setSidebar] = useState(false);
 
@@ -44,6 +47,8 @@ const NavBar = () => {
                 <li><a href="#portfolio">Blog</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact Us</a></li>
+
+                {isAuthenticated && (
                 <li><a  onClick={showSidebar}><FaIcons.FaBars/></a>
 
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -62,6 +67,8 @@ const NavBar = () => {
           </ul>
         </nav>
                 </li>
+                
+                )}
             </ul>
             
         </div>
