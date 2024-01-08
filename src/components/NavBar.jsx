@@ -6,10 +6,13 @@ import { SidebarData } from './SidebarData';
 import { IconContext } from 'react-icons';
 import './Navbar.css'
 import { useAuth0 } from "@auth0/auth0-react";
+import SideBar from './SideBar';
 
 
 
 const NavBar = () => {
+
+    
 
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
 
@@ -48,22 +51,13 @@ const NavBar = () => {
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact Us</a></li>
 
-                {isAuthenticated && (
+                {isAuthenticated && user &&(
                 <li><a  onClick={showSidebar}><FaIcons.FaBars/></a>
 
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })}
+           <SideBar/>
           </ul>
         </nav>
                 </li>

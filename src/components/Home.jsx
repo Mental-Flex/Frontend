@@ -10,6 +10,10 @@ const Home = () => {
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
     const {loginWithRedirect} = useAuth0
 
+    
+
+    
+
     const handleLogout = () => {
         logout({ returnTo: window.location.origin });
       };
