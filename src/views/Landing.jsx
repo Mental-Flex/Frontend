@@ -14,6 +14,7 @@ import Footer from '../components/Footer';
 
 import { Route, Routes, useLocation} from 'react-router-dom';
 import Detail from "../components/Detail";
+import NavBar from "../components/NavBar";
 
 
 
@@ -28,7 +29,9 @@ const Landing = () => {
 
 <Routes>
                 <Route path="/" element={
-                    <>
+                    <>  
+
+                    <NavBar/>
                         <Home />
                         <About />
                         <Funfacts />
@@ -41,6 +44,7 @@ const Landing = () => {
                         <CallUs />
                         <Contact />
                         <Footer />
+                        
                     </>
                 } />
                 <Route path='/detail' element={<Detail />} />

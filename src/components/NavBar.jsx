@@ -12,6 +12,7 @@ import SideBar from './SideBar';
 
 const NavBar = () => {
 
+    //TENES QUE HACER UN ESTADO GLOBAL PARA VER SI EL USUARIO ESTA SI ESTA PODES LLAMAR DESDE EL SIDEBAR SI NO NO.
     
 
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
