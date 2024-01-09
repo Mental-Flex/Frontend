@@ -15,12 +15,12 @@ const CardsContainer = (props) => {
       {props.publications &&
         props.publications.map((e) => (
           <CSSTransition
-            key={e.id}
+            key={e._id}
             classNames="shuffle"
             timeout={{ enter: 250, exit: 250 }}
           >
             <Card
-              id={e.id}
+              id={e._id}
               name={e.name}
               description={e.description}
               image={e.image}

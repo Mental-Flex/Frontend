@@ -48,7 +48,7 @@ const Landing = () => {
                         
                     </>
                 } />
-                <Route path="/detail/:idRecipe" element={<Detail />} />
+                <Route path="/detail/:idPublication" element={<Detail />} />
                 <Route path='/public' element={<FormBlog />} />
 
             </Routes>

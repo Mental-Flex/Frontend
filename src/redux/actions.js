@@ -52,7 +52,7 @@ export const filterByCategory = (value) => {
   
 export function getPublicationById(idPublication) {
     return(dispatch) => {
-        return axios(`/publications/${idPublication}`)
+        return axios.get(`http://localhost:3000/publications/${idPublication}`)
         .then(res => dispatch({
             type: GET_PUBLICATION_ID,
             payload: res.data

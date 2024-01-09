@@ -14,6 +14,10 @@ const Detail = () => {
 
   const {idPublication} = useParams()
 
+  console.log("id")
+
+  console.log(idPublication)
+
    useEffect(()=>{
       dispatch(getPublicationById(idPublication))
   },[idPublication])
@@ -39,7 +43,7 @@ const Detail = () => {
 						</div>
 										<div className="col-md-4">
 							<div className="st-member">
-								<div className="st-member-img">
+								<div >
 									<img src={detail.image} alt={detail.name}/>
 								</div>
 								
