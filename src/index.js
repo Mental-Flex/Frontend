@@ -13,7 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { HashRouter } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID

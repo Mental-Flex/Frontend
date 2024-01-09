@@ -3,7 +3,7 @@ import { useDispatch, useSelector} from "react-redux"
 import { filterByCategory, getAllPublications, getCategories } from "../../redux/actions"
 import CardsContainer from "../Blog/CardsContainer"
 import { useEffect, useState} from "react"
-import NavBar from "../NavBar"
+import NavBar from "../NavBar/NavBar"
 
 
 const Blog = () => {

@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 
 import { Route, Routes, useLocation} from 'react-router-dom';
 import Detail from "../components/Detail";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar/NavBar";
 
 
 

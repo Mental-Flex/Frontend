@@ -11,6 +11,8 @@ const SideBar = () => {
 
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
     const {loginWithRedirect} = useAuth0
+    const [role, setRole] = useState();
+    
 
     
 
@@ -21,53 +23,30 @@ const SideBar = () => {
       };
 
 
-      useEffect(()=>{
-       if(user && isAuthenticated){
-
-        try{
-            console.log(user.name)
-            const username = user.name
-            axios.post('http://localhost:3000/auth/', {username: user.name})
-            toast.success(`Welcome to Mental Flex ${user.name}!`, {
+      useEffect(() => {
+        const fetchData = async () => {
+          if (user && isAuthenticated) {
+            try {
+              const username = user.name;
+              const response = await axios.post('http://localhost:3000/auth/', { username });
+              setRole(response.data.roles[0].name);
+              
+              
+              toast.success(`Welcome to Mental Flex ${user.name}!`, {
                 position: 'bottom-left',
               });
-                
-        }catch(error) {
-                    
-                    alert('No se puede crear el usuario');
-                };
+            } catch (error) {
+              alert('No se puede crear el usuario');
             }
-    },[user])
-
-     
-
-    const [isAdmin, setIsAdmin] = useState(false);
-
-    // useEffect(async()=>{
-    //     if(user && isAuthenticated){
- 
-    //      try{
-             
-    //          const response = await axios.get(`http://localhost:3000/auth/username/${user.name}`)
-             
-    //          console.log("aca")
-    //          console.log(response.data)
-    //          console.log("aca")
-                 
-    //      }catch(error) {
-                     
-    //                  alert('No se puede crear el usuario');
-    //              };
-    //          }
-    //  },[user])
- 
-
-
-
-
-
-
+          }
+        };
     
+        fetchData(); 
+      }, [user, isAuthenticated]);
+
+console.log(role)
+
+
 
   return (
     <>
@@ -93,6 +72,46 @@ const SideBar = () => {
                  </Link>
                
              )}
+
+
+{isAuthenticated && role === 'user' && (
+               
+               <Link
+                 to='/orders'
+                 className='nav-text'
+               >
+                   Orders
+
+               </Link>
+             
+           )}
+
+
+{isAuthenticated && role === 'admin' && (
+               
+               <Link
+                 to='/public'
+                 className='nav-text'
+               >
+                   Public
+
+               </Link>
+             
+           )}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
                                  
     
 
