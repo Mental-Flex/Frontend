@@ -52,7 +52,7 @@ const NavBar = () => {
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact Us</a></li>
 
-                {isAuthenticated && user &&(
+                
                 <li><a  onClick={showSidebar}><FaIcons.FaBars/></a>
 
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -63,7 +63,7 @@ const NavBar = () => {
         </nav>
                 </li>
                 
-                )}
+               
             </ul>
             
         </div>
