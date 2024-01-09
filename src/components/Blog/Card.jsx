@@ -20,7 +20,7 @@ const Card = (props) => {
       <figcaption>
        
           <p style={{ margin: '8px 0', fontWeight: 'bold' }}>{props.name}</p>
-          <Link to="/detail" className="btn btn-main">
+          <Link to={`/detail/${props.id}`} className="btn btn-main">
           <i className="fa fa-link"></i> View more
         </Link>
             

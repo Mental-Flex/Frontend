@@ -20,6 +20,7 @@ const CardsContainer = (props) => {
             timeout={{ enter: 250, exit: 250 }}
           >
             <Card
+              id={e.id}
               name={e.name}
               description={e.description}
               image={e.image}

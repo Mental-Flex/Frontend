@@ -1,11 +1,12 @@
-import { FILTER_BY_CATEGORY, GET_CATEGORIES, GET_PUBLICATIONS } from "./actions"
+import { FILTER_BY_CATEGORY, GET_CATEGORIES, GET_PUBLICATIONS, GET_PUBLICATION_ID } from "./actions"
 
 
 const initialState = {
 
     publications:[],
     filtered:[],
-    categories: []
+    categories: [],
+    detail:{}
   
 }
 
@@ -46,6 +47,15 @@ function reducer(state= initialState, {type, payload}) {
                     categories: payload,
     
                 }
+
+
+                case GET_PUBLICATION_ID:
+                    return{
+        
+                        ... state,
+                        detail: payload
+        
+                    }
 
 
                 
