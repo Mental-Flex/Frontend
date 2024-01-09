@@ -4,6 +4,7 @@ export const FILTER_BY_CATEGORY = 'FILTER_BY_CATEGORY'
 export const GET_CATEGORIES = 'GET_CATEGORIES'
 export const CREATE_USER = 'CREATE_USER'
 export const GET_PUBLICATION_ID = 'GET_PUBLICATION_ID'
+export const CREATE_PUBLICATION = 'CREATE_PUBLICATION'
 
 
 export function getAllPublications() {
@@ -63,6 +64,24 @@ export function getPublicationById(idPublication) {
         });
     }
 }
+
+
+export const createPublication = (form) => {
+
+    return(dispatch) => {
+        return axios.post("http://localhost:3000/publications/", form)
+        .then(res => dispatch({
+            type: CREATE_PUBLICATION,
+            payload :res.data
+
+        }))
+        .catch(error => {
+            
+            alert('No se puede crear la publicacion');
+        });
+    }
+
+  }
 
 
   

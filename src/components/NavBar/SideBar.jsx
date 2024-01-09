@@ -42,7 +42,7 @@ const SideBar = () => {
         };
     
         fetchData(); 
-      }, [user, isAuthenticated]);
+      }, [user]);
 
 console.log(role)
 
