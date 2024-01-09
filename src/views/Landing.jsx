@@ -15,6 +15,7 @@ import Footer from '../components/Footer';
 import { Route, Routes, useLocation} from 'react-router-dom';
 import Detail from "../components/Detail";
 import NavBar from "../components/NavBar/NavBar";
+import FormBlog from "../components/Blog/FormBlog";
 
 
 
@@ -48,6 +49,8 @@ const Landing = () => {
                     </>
                 } />
                 <Route path='/detail' element={<Detail />} />
+                <Route path='/public' element={<FormBlog />} />
+
             </Routes>
 
       
