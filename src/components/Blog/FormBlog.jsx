@@ -14,6 +14,8 @@ const FormBlog = () => {
 
   const form = useRef();
 
+  const formData = new FormData(form.current);
+
   const submitHandler = async (event) => {
     event.preventDefault()
 
@@ -21,7 +23,7 @@ const FormBlog = () => {
 
           
         console.log(form)
-         const  response = await dispatch(createPublication(form));
+         const  response = await dispatch(createPublication(formData));
 
           if(response){
           toast.success('Create Publication', {
@@ -57,11 +59,11 @@ const FormBlog = () => {
 
           <form  className="contact-form"ref={form}  onSubmit={submitHandler}>
       <label >Name</label>
-      <input className="form-control" type="text" name="user_name" />
+      <input className="form-control" type="text" name="name" />
       <label>Category</label>
-      <input className="form-control" type="text" name="user_email"  />
+      <input className="form-control" type="text" name="category"  />
       <label>Description</label>
-      <textarea className="form-control" rows="10"  name="message" />
+      <textarea className="form-control" rows="10"  name="description" />
     
 
 <label >Image</label>

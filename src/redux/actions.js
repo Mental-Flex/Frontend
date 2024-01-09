@@ -66,10 +66,14 @@ export function getPublicationById(idPublication) {
 }
 
 
-export const createPublication = (form) => {
+export const createPublication = (formData) => {
 
     return(dispatch) => {
-        return axios.post("http://localhost:3000/publications/", form)
+        return axios.post("http://localhost:3000/publications/", formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data',
+            },
+          })
         .then(res => dispatch({
             type: CREATE_PUBLICATION,
             payload :res.data
