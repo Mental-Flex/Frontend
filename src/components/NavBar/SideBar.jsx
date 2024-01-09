@@ -52,8 +52,15 @@ console.log(role)
     <>
 
 {!isAuthenticated && (
+
+<li  className='nav-text'>
+<Link onClick={loginWithPopup}>
+  <span>LOGIN</span>
+</Link>
+</li>
+
             
-              <Link className='nav-text' onClick={loginWithPopup}>LOGIN</Link>
+              
               
             )
 
@@ -62,41 +69,45 @@ console.log(role)
  
                                  
  {isAuthenticated && (
+
+
+
+<li  className='nav-text' >
+<Link  onClick={handleLogout}>
+  <span>LOGOUT</span>
+</Link>
+</li>
+
                
-                 <Link
-                   onClick={handleLogout}
-                   className='nav-text'
-                 >
-                     LOGUOT
- 
-                 </Link>
-               
+                
              )}
 
 
 {isAuthenticated && role === 'user' && (
-               
-               <Link
-                 to='/orders'
-                 className='nav-text'
-               >
-                   Orders
 
-               </Link>
+
+<li  className='nav-text'>
+<Link to='/orders'>
+  <span>Orders</span>
+</Link>
+</li>
+
+               
+           
              
            )}
 
 
 {isAuthenticated && role === 'admin' && (
-               
-               <Link
-                 to='/public'
-                 className='nav-text'
-               >
-                   Public
 
-               </Link>
-             
+
+<li  className='nav-text'>
+<Link to='/public'>
+  <span>Public</span>
+</Link>
+</li>
+
+ 
            )}
 
 
