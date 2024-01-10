@@ -53,6 +53,7 @@ const FormBlog = () => {
        
     return categories.map((d, i) => {
         const checked = category.includes(d.name);
+       
       return (
         <div key={i}>
           <input
@@ -62,6 +63,7 @@ const FormBlog = () => {
             value={d.name}
             onChange={categoryHandler}
             checked={checked}
+          
           />
           <label htmlFor={d.name}>{d.name}</label>
         </div>
