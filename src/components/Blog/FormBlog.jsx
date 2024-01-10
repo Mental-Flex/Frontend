@@ -9,6 +9,7 @@ import axios from 'axios'
 
 
 
+
 const FormBlog = () => {
 
 
@@ -51,7 +52,7 @@ const FormBlog = () => {
   const mapCategories = () => {
        
     return categories.map((d, i) => {
-        const checked = category.includes(d.title);
+        const checked = category.includes(d.name);
       return (
         <div key={i}>
           <input
@@ -94,6 +95,9 @@ const FormBlog = () => {
     })
     }
   };
+
+
+  console.log(completed.publicationCategories)
   
 
 
@@ -140,6 +144,9 @@ const FormBlog = () => {
     .catch((error) => {
       console.log(error);
     });
+
+
+    
           
           
 
