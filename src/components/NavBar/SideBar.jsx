@@ -65,23 +65,20 @@ console.log(role)
             )
 
              }
+
+
+               {
+                  isAuthenticated && ( <img
+                  className="object-cover w-full h-full overflow-hidden"
+                  src={user.picture}
+                  alt={user.nickname}
+                />
+                 
+                 )
+                }
  
  
                                  
- {isAuthenticated && (
-
-
-
-<li  className='nav-text' >
-<Link  onClick={handleLogout}>
-  <span>LOGOUT</span>
-</Link>
-</li>
-
-               
-                
-             )}
-
 
 
 
@@ -106,6 +103,23 @@ console.log(role)
 </lu>
  
            )}
+
+
+
+{isAuthenticated && (
+
+
+
+<li  className='nav-text' >
+<Link  onClick={handleLogout}>
+  <span>LOGOUT</span>
+</Link>
+</li>
+
+               
+                
+             )}
+
 
 
 

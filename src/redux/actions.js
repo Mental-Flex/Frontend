@@ -6,6 +6,7 @@ export const CREATE_USER = 'CREATE_USER'
 export const GET_PUBLICATION_ID = 'GET_PUBLICATION_ID'
 export const CREATE_PUBLICATION = 'CREATE_PUBLICATION'
 export const GET_ORDERS = 'GET_ORDERS'
+export const GET_TESTIMONIALS = 'GET_TESTIMONIALS'
 
 
 export function getAllPublications() {
@@ -100,6 +101,21 @@ export const createPublication = (formData) => {
         .catch(error => {
             
             alert('No se encontraron orders');
+        });
+    }
+  }
+
+  export const getTestimonials = () => {
+    return(dispatch) => {
+        return axios("http://localhost:3000/testimonials/")
+        .then(res => dispatch({
+            type: GET_TESTIMONIALS,
+            payload :res.data
+
+        }))
+        .catch(error => {
+            
+            alert('No se encontraron testimonios');
         });
     }
   }
