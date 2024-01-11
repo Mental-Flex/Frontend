@@ -1,4 +1,4 @@
-import { CREATE_PUBLICATION, FILTER_BY_CATEGORY, GET_CATEGORIES, GET_PUBLICATIONS, GET_PUBLICATION_ID } from "./actions"
+import { CREATE_PUBLICATION, FILTER_BY_CATEGORY, GET_CATEGORIES, GET_ORDERS, GET_PUBLICATIONS, GET_PUBLICATION_ID } from "./actions"
 
 
 const initialState = {
@@ -6,7 +6,8 @@ const initialState = {
     publications:[],
     filtered:[],
     categories: [],
-    detail:{}
+    detail:{},
+    orders: []
   
 }
 
@@ -65,6 +66,15 @@ function reducer(state= initialState, {type, payload}) {
                
 
             }
+
+
+            case GET_ORDERS:
+                return{
+                    ... state,
+                    orders: payload,
+    
+                }
+
 
 
                 

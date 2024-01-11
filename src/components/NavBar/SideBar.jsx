@@ -83,30 +83,27 @@ console.log(role)
              )}
 
 
-{isAuthenticated && role === 'user' && (
-
-
-<li  className='nav-text'>
-<Link to='/orders'>
-  <span>Orders</span>
-</Link>
-</li>
-
-               
-           
-             
-           )}
 
 
 {isAuthenticated && role === 'admin' && (
+
+
+<lu>
 
 
 <li  className='nav-text'>
 <Link to='/public'>
   <span>Public</span>
 </Link>
+
 </li>
 
+<li className='nav-text'>
+<Link to='/orders'>
+  <span>Orders</span>
+</Link>
+</li>
+</lu>
  
            )}
 
