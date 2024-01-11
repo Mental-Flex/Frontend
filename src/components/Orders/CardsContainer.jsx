@@ -15,7 +15,7 @@ const CardsContainer = (props) => {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 1,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#FCF3CF',
     width: '100%', // Ancho al 100%
         height: '100%', // Altura al 100%
 

@@ -14,8 +14,10 @@ const Card = (props) => {
         opacity: 0.6,
         justifyContent: 'center',
         textAlign: 'center',
-        backgroundColor: '#d0d0d0',
-        color: '#000'
+        backgroundColor: '#F8C471 ',
+        color: '#000',
+        padding: 10,
+        margin: '10px'
         
         }}>
       
