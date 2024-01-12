@@ -59,7 +59,7 @@ const Testimonials = () => {
                             <i class='bx bxs-quote-alt-left quote-icon'></i>
 
                             <div className='mydetails'>
-                                <span className='name'>Sofia</span>
+                                <span className='name'>{e.name}</span>
                             </div>
 
 
