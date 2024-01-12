@@ -70,6 +70,7 @@ console.log(role)
                {
                   isAuthenticated && ( <img
                   className="object-cover w-full h-full overflow-hidden"
+                  style={{borderRadius: 100}}
                   src={user.picture}
                   alt={user.nickname}
                 />
