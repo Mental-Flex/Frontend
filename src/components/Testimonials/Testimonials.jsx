@@ -6,10 +6,12 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import 'swiper/css/zoom';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import './styles.css';
-import { Navigation } from 'swiper/modules';
+import { Zoom, Navigation, Pagination } from 'swiper/modules';
 
 
 
@@ -35,57 +37,73 @@ const Testimonials = () => {
     return(
 
         <section className="my-section">
-		
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-
-            {testimonials && testimonials.map((e)=>{
-
-                return(
 
 
+<Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        zoom={true}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Zoom, Navigation, Pagination]}
+        className="mySwiper"
+      >
 
-                <SwiperSlide>
+        {testimonials && testimonials.map((e)=>{
+            return (
 
+ <SwiperSlide>
 
-                    
-                   <div className='mytestimonial'>
+<div className="swiper-zoom-container">
+<div className='mytestimonial'>
 
-                    <div className='testi-content'>
+<div className='testi-content'>
 
-                        <div className='slide'>
-
-
-                            <p>{e.description}</p>
-                            <i class='bx bxs-quote-alt-left quote-icon'></i>
-
-                            <div className='mydetails'>
-                                <span className='name'>{e.name}</span>
-                            </div>
-
-
-
-
-                        </div>
-
-
-
-                    </div>
+    <div className='slide'>
 
 
-                   </div>
-                
-                
-                </SwiperSlide>
-                
-                
-                )
+        <p>{e.description}</p>
+        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+        <div className='mydetails'>
+            <span className='name'>{e.name}</span>
+        </div>
 
 
 
-            })}
+
+    </div>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+          
         
-        
+          
+        </SwiperSlide>
+
+
+            )
+        })}
+       
+       
       </Swiper>
+		
+      
 
 
       </section>

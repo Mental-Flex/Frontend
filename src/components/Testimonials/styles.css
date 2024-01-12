@@ -37,7 +37,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #e3f2fd;
+  background: #FFA500;
 
   /* Center slide text vertically */
   display: flex;
@@ -91,7 +91,7 @@ color: #333;
 .slide .quote-icon{
 
   font-size: 30px;
-  color: #4070f4;
+  color: #333;
 }
 
 .slide .mydetails {
