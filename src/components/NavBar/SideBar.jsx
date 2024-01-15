@@ -110,6 +110,26 @@ console.log(role)
 {isAuthenticated && (
 
 
+<lu>
+
+
+<li  className='nav-text'>
+<Link to='/testimonial'>
+  <span>Public Testimonial</span>
+</Link>
+
+</li>
+
+</lu>
+ 
+           )}
+
+
+
+
+{isAuthenticated && (
+
+
 
 <li  className='nav-text' >
 <Link  onClick={handleLogout}>

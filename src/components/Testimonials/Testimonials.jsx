@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 
 import './styles.css';
 import { Zoom, Navigation, Pagination } from 'swiper/modules';
+import { Link } from "react-router-dom";
 
 
 
@@ -65,12 +66,18 @@ const Testimonials = () => {
 
     <div className='slide'>
 
+      <img src={e.image} alt={e.name} className='image'/>
+
 
         <p>{e.description}</p>
         <i class='bx bxs-quote-alt-left quote-icon'></i>
 
         <div className='mydetails'>
             <span className='name'>{e.name}</span>
+            <Link to={e.link}>
+            <span className='instagram'>{e.instagram}</span>
+            </Link>
+
         </div>
 
 
