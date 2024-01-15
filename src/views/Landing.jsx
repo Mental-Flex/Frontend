@@ -18,7 +18,7 @@ import NavBar from "../components/NavBar/NavBar";
 import FormBlog from "../components/Blog/FormBlog";
 import Orders from "../components/Orders/Orders";
 import PublicTestimonial from "../components/Testimonials/PublicTestimonial";
-import Calendary from "../components/Calendary";
+import Calendary from "../components/Calendary/Calendary";
 
 
 
