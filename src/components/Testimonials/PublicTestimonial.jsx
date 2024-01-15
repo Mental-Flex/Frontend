@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { createPublication, getCategories, getTestimonials } from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux"
 import axios from 'axios'
+import { validate } from "./validations";
 
 
 
@@ -21,6 +22,7 @@ const PublicTestimonial = () => {
 
 
     const testimonials = useSelector(state => state.testimonials)
+    const [errors, setErrors] = useState({ form: "complete form" });
 
 
 
@@ -45,6 +47,12 @@ const PublicTestimonial = () => {
   const handleChange = (e) => {
 
       setCompleted({ ...completed, [e.target.name]: e.target.value });
+
+      const validationErrors = validate({
+        ...completed,
+        [e.target.name]: e.target.value,
+      });
+      setErrors({ ...errors, [e.target.name]: validationErrors[e.target.name] });
     
 
   };
@@ -73,7 +81,12 @@ const PublicTestimonial = () => {
      
     };
 
-    const formData = new FormData();
+
+    const validationErrors = validate(finalForm);
+
+    
+    if (Object.keys(validationErrors).length === 0) {
+      const formData = new FormData();
 
 
     formData.append("name", finalForm.name);
@@ -81,13 +94,6 @@ const PublicTestimonial = () => {
     formData.append("instagram", finalForm.instagram)
     formData.append("link", finalForm.link)
     formData.append("image", e.target.image.files[0]);
-    
-   
-  
-
-  
-   console.log(formData)
-
 
     axios
     .post("http://localhost:3000/testimonials/", formData)
@@ -105,12 +111,11 @@ const PublicTestimonial = () => {
     });
 
 
+    } else {
+      setErrors(validationErrors);
+    }
     
-          
-          
-
-       
-        
+      
 }
 
  
@@ -147,6 +152,9 @@ const PublicTestimonial = () => {
 
       <label >Image</label>
       <input className="form-control"  type="file" id="image" name="image" value={completed.image} onChange={handleChange} />
+      {errors.image ? (
+              <p style={{color: 'red'}}>{errors.image}</p>
+            ) : null}
       <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i class="fa fa-paper-plane "></i>
 			        Public</button>
 
