@@ -18,6 +18,7 @@ import NavBar from "../components/NavBar/NavBar";
 import FormBlog from "../components/Blog/FormBlog";
 import Orders from "../components/Orders/Orders";
 import PublicTestimonial from "../components/Testimonials/PublicTestimonial";
+import Calendary from "../components/Calendary";
 
 
 
@@ -54,6 +55,8 @@ const Landing = () => {
                 <Route path='/public' element={<FormBlog />} />
                 <Route path='/orders' element={<Orders />} />
                 <Route path="/testimonial" element={<PublicTestimonial/>}/>
+                <Route path="/calendary" element={<Calendary/>}/>
+                
 
 
             </Routes>
