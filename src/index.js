@@ -14,6 +14,25 @@ import 'react-toastify/dist/ReactToastify.css';
 import { HashRouter } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
 import NavBar from './components/NavBar/NavBar';
+import {I18nextProvider} from 'react-i18next'
+import i18next from 'i18next';
+
+import global_es from './translations/es/global.json'
+import global_en from './translations/en/global.json'
+
+
+i18next.init({
+  interpolation: {escapeValue: false},
+  lng: "en",
+  resources: {
+    es: {
+      global: global_es,
+    },
+    en:{
+      global: global_en,
+    },
+  },
+})
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
@@ -22,6 +41,7 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <I18nextProvider i18n={i18next}>
     <Auth0Provider
       domain="dev-2x57svitcxx0k6g3.us.auth0.com"
       clientId="fhx5yGIXdxt4DuxAlOOVGg8mRVJI3ZQs"
@@ -36,6 +56,7 @@ root.render(
     </BrowserRouter>
     </Provider>
 </Auth0Provider>
+</I18nextProvider>
   </React.StrictMode>
 );
 

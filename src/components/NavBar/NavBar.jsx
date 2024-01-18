@@ -6,12 +6,12 @@ import { IconContext } from 'react-icons';
 import './Navbar.css'
 import { useAuth0 } from "@auth0/auth0-react";
 import SideBar from './SideBar';
-
+import {useTranslation} from 'react-i18next'
 
 
 const NavBar = () => {
 
-    //TENES QUE HACER UN ESTADO GLOBAL PARA VER SI EL USUARIO ESTA SI ESTA PODES LLAMAR DESDE EL SIDEBAR SI NO NO.
+   const [t, i18n] = useTranslation("global")
     
 
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
@@ -43,13 +43,15 @@ const NavBar = () => {
         
         <div className="collapse navbar-collapse main-nav" id="sept-main-nav">
             <ul className="nav navbar-nav navbar-right">
-                <li className="active"><a href="#home">Home</a></li>
+                <li className="active"><a href="#home">{t("home.NavBar-Home")}</a></li>
                 
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#portfolio">Blog</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact Us</a></li>
+                <button onClick={()=> i18n.changeLanguage("es")}>ES</button>
+                <button onClick={()=> i18n.changeLanguage("en")}>EN</button>
 
                 
                 <li><a  onClick={showSidebar}><FaIcons.FaBars/></a>
