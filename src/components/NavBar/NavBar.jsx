@@ -50,8 +50,8 @@ const NavBar = () => {
                 <li><a href="#portfolio">{t("home.NavBar-Blog")}</a></li>
                 <li><a href="#pricing">{t("home.NavBar-Pricing")}</a></li>
                 <li><a href="#contact">{t("home.NavBar-Contact")}</a></li>
-                <button onClick={()=> i18n.changeLanguage("es")}>ES</button>
-                <button onClick={()=> i18n.changeLanguage("en")}>EN</button>
+                <li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
+                <li> <a onClick={()=> i18n.changeLanguage("en")} style={{ cursor: 'pointer' }}>EN </a></li>
 
                 
                 <li><a  onClick={showSidebar}><FaIcons.FaBars/></a>
