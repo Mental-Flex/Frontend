@@ -43,7 +43,7 @@ const NavBar = () => {
         
         <div className="collapse navbar-collapse main-nav" id="sept-main-nav">
             <ul className="nav navbar-nav navbar-right">
-                <li className="active"><a href="#home">{t("home.NavBar-Home")}</a></li>
+                <li ><a href="#home">{t("home.NavBar-Home")}</a></li>
                 
                 <li><a href="#about">{t("home.NavBar-About")}</a></li>
                 <li><a href="#service">{t("home.NavBar-Services")}</a></li>
