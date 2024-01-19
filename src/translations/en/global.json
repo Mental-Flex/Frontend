@@ -51,6 +51,24 @@
     "phrase": {
         "phrase1": "phrase 1",
         "phrase2": "phrase 2"
+    }, 
+
+    "callus": {
+        "call1": "If you like to work with us",
+        "call2": "Call Us Now"
+    },
+
+    "questions": {
+        "question1": "question 1",
+        "response1": "response 1",
+        "question2": "question 2",
+        "response2": "response 2",
+        "question3": "question 3",
+        "response3": "response 3",
+        "question4": "question 4",
+        "response4": "response 4"
+        
+
     }
     
 }
