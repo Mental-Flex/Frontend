@@ -1,5 +1,59 @@
 {
     "home": {
-        "NavBar-Home": "Inicio"
-    }
+        "NavBar-Home": "Inicio",
+        "NavBar-About": "Sobre Nosotros",
+        "NavBar-Services": "Servicios",
+        "NavBar-Blog": "Blog",
+        "NavBar-Pricing": "Precios",
+        "NavBar-Contact": "Contáctanos",
+        "title1": "El proceso de curación comienza ahora",
+        "title2": "PSICOTERAPIA INNOVADORA Y CONTEMPORÁNEA",
+        "sideBar-login": "ENTRAR",
+        "sidebar-public": "Publicar",
+        "sidebar-orders": "Compras",
+        "sidebar-testimonial": "Publicar testimonio",
+        "sidebar-logout": "SALIR"
+
+    },
+
+    "about": {
+
+        "about1": "Bienvenido a Mental Flex",
+        "about2": "Somos especialistas en salud mental",
+        "description": "description",
+        "card1": "Psicología Clínica"
+
+
+    },
+
+    "funfacts": {
+        "f1": "Proyectos",
+        "f2": "Horas de Trabajo",
+        "f3": "E-mail",
+        "f4": "Completo"
+        
+   },
+
+   "services": {
+    "services-1": "Que hacemos",
+    "services-2": "subtitulo",
+    "option1": "Opcion",
+    "description1": "descripcion",
+    "option2": "Opcion",
+    "description2": "descripcion",
+    "option3": "Opcion",
+    "description3": "descripcion",
+    "option4": "Opcion",
+    "description4": "descripcion"
+
+},
+
+"phrase": {
+    "phrase1": "Frase 1",
+    "phrase2": "Frase 2"
+}
+
+
+
+
 }

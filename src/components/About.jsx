@@ -1,8 +1,11 @@
 import React from "react"
 import NavBar from "./NavBar/NavBar"
+import {useTranslation} from 'react-i18next'
 
 
 const About = () => {
+
+	const [t, i18n] = useTranslation("global")
 
     return(
 
@@ -15,17 +18,12 @@ const About = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="section-title st-center">
-						<h3>WelCome to Mental Flex</h3>
-						<p>We are mental health specialists</p>
+						<h3>{t("about.about1")}</h3>
+						<p>{t("about.about2")}</p>
 					</div>
 					<div className="row mb90">
 						<div className="col-md-6">
-							<p>Texit l, habere se indocti magnosque culpa gravioribus discedere eas indignae diogenem, praetermissum
-								effugiendorum vult dicent, periculum dolere putat. Iucunditatem quid turbulenta patre eae depravatum
-								talem elaborare plerisque repellere, o potiendi tuo aliter, militaris sint tranquillat liberalitati.
-								Locus delicata divelli intemperantes audeam maximisque sitne pulcherrimum aegritudines studium. Habent
-								inveniri fidelissimae aequi andriam laudabilis. Libido censet assiduitas quae probantur tantalo
-								exquisitaque erunt laudatur optari. Late suapte veterum enim qui magna securi eaque proficiscuntur.</p>
+							<p>{t("about.description")}</p>
 						</div>
 										<div className="col-md-4">
 							<div className="st-member">
@@ -33,40 +31,9 @@ const About = () => {
 									<img src="assets/photos/member3.png" alt="" className="img-responsive"/>
 								</div>
 								<div className="st-member-info">
-									<strong className="st-member-name">Mercedes Frias</strong>
-									<p className="st-member-pos">Clinical Psychology</p>
-									<div className="skills">
-										<div className="skill">
-											<strong>clinic</strong>
-											<span>100%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="90"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 90}}>
-													<span className="sr-only">100% Complete</span>
-												</div>
-											</div>
-										</div>
-										<div className="skill">
-											<strong>couples</strong>
-											<span>70%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="70"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 70}}>
-													<span className="sr-only">70% Complete</span>
-												</div>
-											</div>
-										</div>
-										<div className="skill">
-											<strong>gender</strong>
-											<span>86%</span>
-											<div className="progress">
-												<div className="progress-bar progress-bar-sept" role="progressbar" aria-valuenow="86"
-													aria-valuemin="0" aria-valuemax="100" style={{width: 86}}>
-													<span className="sr-only">86% Complete</span>
-												</div>
-											</div>
-										</div>
-									</div>
+									<strong className="st-member-name">Mercedes Frías</strong>
+									<p className="st-member-pos">{t("about.card1")}</p>
+									
 									<div className="st-member-social">
 										<ul>
 											<li><a href="#" className="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i

@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {useTranslation} from 'react-i18next'
 
 
 const SideBar = () => {
+
+  const [t, i18n] = useTranslation("global")
 
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
     const {loginWithRedirect} = useAuth0
@@ -55,7 +58,7 @@ console.log(role)
 
 <li  className='nav-text'>
 <Link onClick={loginWithPopup}>
-  <span>LOGIN</span>
+  <span>{t("home.sideBar-login")}</span>
 </Link>
 </li>
 
@@ -91,14 +94,14 @@ console.log(role)
 
 <li  className='nav-text'>
 <Link to='/public'>
-  <span>Public</span>
+  <span>{t("home.sidebar-public")}</span>
 </Link>
 
 </li>
 
 <li className='nav-text'>
 <Link to='/orders'>
-  <span>Orders</span>
+  <span>{t("home.sidebar-orders")}</span>
 </Link>
 </li>
 </lu>
@@ -115,7 +118,7 @@ console.log(role)
 
 <li  className='nav-text'>
 <Link to='/testimonial'>
-  <span>Public Testimonial</span>
+  <span>{t("home.sidebar-testimonial")}</span>
 </Link>
 
 </li>
@@ -133,7 +136,7 @@ console.log(role)
 
 <li  className='nav-text' >
 <Link  onClick={handleLogout}>
-  <span>LOGOUT</span>
+  <span>{t("home.sidebar-logout")}</span>
 </Link>
 </li>
 

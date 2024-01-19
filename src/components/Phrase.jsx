@@ -1,7 +1,9 @@
 import React from "react"
-
+import {useTranslation} from 'react-i18next'
 
 const Phrase = () => {
+
+	const [t, i18n] = useTranslation("global")
 
     return(
 
@@ -14,9 +16,8 @@ const Phrase = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="c2a">
-						<h2>Omnibus reliquar rebus</h2>
-						<p>Evertitur depravatum illo tamquam novum, possent intus laudatur hinc grate aristoteli per splendido
-							soluta fabulae, ne aristippi cui deleniti nostros illud.</p>
+						<h2>{t("phrase.phrase1")}</h2>
+						<p>{t("phrase.phrase2")}</p>
 						
 					</div>
 				</div>

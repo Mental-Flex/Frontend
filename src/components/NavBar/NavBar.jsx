@@ -45,11 +45,11 @@ const NavBar = () => {
             <ul className="nav navbar-nav navbar-right">
                 <li className="active"><a href="#home">{t("home.NavBar-Home")}</a></li>
                 
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#portfolio">Blog</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">{t("home.NavBar-About")}</a></li>
+                <li><a href="#service">{t("home.NavBar-Services")}</a></li>
+                <li><a href="#portfolio">{t("home.NavBar-Blog")}</a></li>
+                <li><a href="#pricing">{t("home.NavBar-Pricing")}</a></li>
+                <li><a href="#contact">{t("home.NavBar-Contact")}</a></li>
                 <button onClick={()=> i18n.changeLanguage("es")}>ES</button>
                 <button onClick={()=> i18n.changeLanguage("en")}>EN</button>
 

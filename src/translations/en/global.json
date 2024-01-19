@@ -1,5 +1,56 @@
 {
     "home": {
-        "NavBar-Home": "Home"
+        "NavBar-Home": "Home",
+        "NavBar-About": "About",
+        "NavBar-Services": "Services",
+        "NavBar-Blog": "Blog",
+        "NavBar-Pricing": "Pricing",
+        "NavBar-Contact": "Contact Us",
+        "title1": "Healing process starts now",
+        "title2": "INNOVATE & CONTEMPORARY PSYCHOTHERAPY",
+        "sideBar-login": "LOGIN",
+        "sidebar-public": "Public",
+        "sidebar-orders": "Orders",
+        "sidebar-testimonial": "Public testimonial",
+        "sidebar-logout": "LOGOUT"
+        
+    },
+
+    "about": {
+
+        "about1": "WelCome to Mental Flex",
+        "about2": "We are mental health specialists",
+        "description": "description",
+        "card1": "Clinical Psychology"
+
+
+    },
+
+    "funfacts": {
+         "f1": "Projects",
+         "f2": "Hours Work",
+         "f3": "E-mail",
+         "f4": "Completed"
+         
+    },
+
+    "services": {
+        "services-1": "What we do",
+        "services-2": "caption",
+        "option1": "Option",
+        "description1": "description",
+        "option2": "Option",
+        "description2": "description",
+        "option3": "Option",
+        "description3": "description",
+        "option4": "Option",
+        "description4": "description"
+
+    },
+
+    "phrase": {
+        "phrase1": "phrase 1",
+        "phrase2": "phrase 2"
     }
+    
 }
