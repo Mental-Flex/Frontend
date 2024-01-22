@@ -17,33 +17,30 @@
     },
 
     "about": {
-
         "about1": "WelCome to Mental Flex",
         "about2": "We are mental health specialists",
-        "description": "description",
+        "description": "Welcome to Mental Flex, your trusted virtual partner in psychotherapy. Our journey began with a profound commitment to providing compassionate support to individuals navigating the complexities of life. We believe that seeking help is the first courageous step towards genuine transformation, leading to enhanced well-being and mental health. At Mental Flex, our core motivation is rooted in the sincere desire to assist without judgment. We understand that each person's journey is unique, and we embrace the diversity of experiences that shape individuals. Our virtual therapy sessions are carefully tailored to meet the specific needs of each client, recognizing that a personalized approach fosters a more meaningful and effective therapeutic relationship. We recognize the significance of open communication as the cornerstone of the healing process. Our team of dedicated professionals employs a range of psychotherapeutic tools to create a safe and supportive environment. Through these tools, we empower individuals to strengthen their personalities, boost self-esteem, and rediscover a profound sense of self. Mental Flex is more than just a virtual platform for psychotherapy; it is a community built on empathy, understanding, and a shared commitment to mental health. Together, we embark on a journey towards positive change, fostering resilience, and promoting holistic well-being. Join us in embracing the transformative power of therapy and the limitless possibilities it holds for your personal growth. Take the first step towards a healthier and more fulfilling life with Mental Flex. We are here to support you every step of the process",
         "card1": "Clinical Psychology"
-
-
     },
 
     "funfacts": {
-         "f1": "Projects",
-         "f2": "Hours Work",
-         "f3": "E-mail",
-         "f4": "Completed"
+         "f1": "Countries",
+         "f2": "Patients",
+         "f3": "Hours work",
+         "f4": "Academic hours"
          
     },
 
     "services": {
         "services-1": "What we do",
-        "services-2": "caption",
-        "option1": "Option",
+        "services-2": "Services",
+        "option1": "Individual Therapy",
         "description1": "description",
-        "option2": "Option",
+        "option2": "Couples Therapy",
         "description2": "description",
-        "option3": "Option",
+        "option3": "Counselling",
         "description3": "description",
-        "option4": "Option",
+        "option4": "Therapeutic Resources",
         "description4": "description"
 
     },
@@ -69,6 +66,11 @@
         "response4": "response 4"
         
 
+    },
+
+    "blog": {
+        "blog1": "VALUABLE ARTICLES TO IMPROVE YOUR MENTAL HEALTH",
+        "blog2": "BLOG"
     }
     
 }

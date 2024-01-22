@@ -23,7 +23,7 @@ const Services = () => {
 					<div className="row">
 						<div className="col-md-3">
 							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-coffee"></i></div>
+								<div className="st-feature-icon"><i className="fa fa-user"></i></div>
 								<strong className="st-feature-title">{t("services.option1")}</strong>
 								<p>{t("services.description1")}</p>
 								
@@ -38,14 +38,14 @@ const Services = () => {
 						</div>
 						<div className="col-md-3">
 							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-graduation-cap"></i></div>
+								<div className="st-feature-icon"><i className="fa fa-comment"></i></div>
 								<strong className="st-feature-title">{t("services.option3")}</strong>
 								<p>{t("services.description3")}</p>
 							</div>
 						</div>
 						<div className="col-md-3">
 							<div className="st-feature">
-								<div className="st-feature-icon"><i className="fa fa-home"></i></div>
+								<div className="st-feature-icon"><i className="fa fa-book"></i></div>
 								<strong className="st-feature-title">{t("services.option4")}</strong>
 								<p>{t("services.description4")}</p>
 							</div>

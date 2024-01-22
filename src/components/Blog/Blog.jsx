@@ -4,9 +4,12 @@ import { filterByCategory, getAllPublications, getCategories } from "../../redux
 import CardsContainer from "../Blog/CardsContainer"
 import { useEffect, useState} from "react"
 import NavBar from "../NavBar/NavBar"
+import {useTranslation} from 'react-i18next'
 
 
 const Blog = () => {
+
+	const [t, i18n] = useTranslation("global")
 
     // voy a preguntar si esta autenticado y si hay user y si si voy a llamar a getuser del backend para que me traiga
     //  el usuario role y si role es admin voy a poner un boton (en un side bar) que me lleve a un formulario para publicar blog, luego voy
@@ -67,8 +70,8 @@ const Blog = () => {
 			<div className="row">
 				<div className="col-md-12 no-padding ">
 					<div className="section-title st-center">
-						<h3>What we have done</h3>
-						<p>Avocent deditum long</p>
+						<h3>{t("blog.blog1")}</h3>
+						<p>{t("blog.blog2")}</p>
 					</div>
 
 

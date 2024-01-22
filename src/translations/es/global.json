@@ -20,30 +20,30 @@
 
         "about1": "Bienvenido a Mental Flex",
         "about2": "Somos especialistas en salud mental",
-        "description": "description",
+        "description": "Bienvenidos a Mental Flex, tu confiable aliado en psicoterapia virtual. Nuestra travesía comenzó con un compromiso profundo de brindar apoyo compasivo a personas que navegan las complejidades de la vida. Creemos que buscar ayuda es el primer valiente paso hacia una transformación genuina, conduciendo a un mejor bienestar y salud mental. En Mental Flex, nuestra motivación central se fundamenta en el sincero deseo de ayudar sin juzgar. Entendemos que el camino de cada persona es único y valoramos la diversidad de experiencias que moldean a los individuos. Nuestras sesiones de terapia virtual están cuidadosamente adaptadas para satisfacer las necesidades específicas de cada cliente, reconociendo que un enfoque personalizado fomenta una relación terapéutica más significativa y efectiva. Reconocemos la importancia de la comunicación abierta como la piedra angular del proceso de curación. Nuestro equipo de profesionales dedicados utiliza una variedad de herramientas psicoterapéuticas para crear un entorno seguro y de apoyo. A través de estas herramientas, capacitamos a las personas para fortalecer sus personalidades, elevar la autoestima y redescubrir un profundo sentido de sí mismos. Mental Flex es más que una plataforma virtual de psicoterapia; es una comunidad construida sobre empatía, comprensión y un compromiso compartido con la salud mental. Juntos, emprendemos un viaje hacia el cambio positivo, fomentando la resiliencia y promoviendo el bienestar integral. Únete a nosotros para abrazar el poder transformador de la terapia y las posibilidades ilimitadas que ofrece para tu crecimiento personal. Da el primer paso hacia una vida más saludable y plena con Mental Flex. Estamos aquí para apoyarte en cada paso del proceso.",
         "card1": "Psicología Clínica"
 
 
     },
 
     "funfacts": {
-        "f1": "Proyectos",
-        "f2": "Horas de Trabajo",
-        "f3": "E-mail",
-        "f4": "Completo"
+        "f1": "Países",
+        "f2": "Pacientes",
+        "f3": "Horas de trabajo",
+        "f4": "Horas académicas"
         
    },
 
    "services": {
     "services-1": "Que hacemos",
-    "services-2": "subtitulo",
-    "option1": "Opcion",
+    "services-2": "Servicios",
+    "option1": "Terapia Individual",
     "description1": "descripcion",
-    "option2": "Opcion",
+    "option2": "Terapia de Parejas",
     "description2": "descripcion",
-    "option3": "Opcion",
+    "option3": "Asesoramiento/Counselling",
     "description3": "descripcion",
-    "option4": "Opcion",
+    "option4": "Recursos Terapéuticos",
     "description4": "descripcion"
 
 },
@@ -69,6 +69,11 @@
     "response4": "respuesta 4"
     
 
+},
+
+"blog": {
+    "blog1": "ARTÍCULOS VALIOSOS PARA MEJORAR TU SALUD MENTAL",
+    "blog2": "BLOG"
 }
 
 
