@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './styles.css';
-import { Zoom, Navigation, Pagination } from 'swiper/modules';
+import { Zoom, Navigation, Pagination, Autoplay} from 'swiper/modules';
 import { Link } from "react-router-dom";
 
 
@@ -50,8 +50,13 @@ const Testimonials = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Zoom, Navigation, Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Zoom, Navigation, Pagination, Autoplay]}
         className="mySwiper"
+
       >
 
         {testimonials && testimonials.map((e)=>{
