@@ -62,7 +62,8 @@ const NavBar = () => {
       smooth={true} 
       offset={50} 
       duration={500}
-      style={{ cursor: 'pointer' }}>{t("home.NavBar-About")}</Link></li>
+      style={{ cursor: 'pointer' }}
+      >{t("home.NavBar-About")}</Link></li>
                 <li><Link to="service" 
       spy={true} 
       smooth={true} 
