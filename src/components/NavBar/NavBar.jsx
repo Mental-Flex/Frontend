@@ -42,7 +42,7 @@ const NavBar = () => {
             <Link className="navbar-brand"to="home" 
       spy={true} 
       smooth={true} 
-      offset={50} 
+      offset={-100} 
       duration={500}
       style={{ cursor: 'pointer' }} ><img src="assets/photos/logo3.png" alt="" className="img-responsive"/></Link>
         </div>
@@ -53,7 +53,7 @@ const NavBar = () => {
                 <li ><Link to="home" 
       spy={true} 
       smooth={true} 
-      offset={50} 
+      offset={-100} 
       duration={500} 
       style={{ cursor: 'pointer' }}>{t("home.NavBar-Home")}</Link></li>
                 
@@ -66,7 +66,7 @@ const NavBar = () => {
                 <li><Link to="service" 
       spy={true} 
       smooth={true} 
-      offset={50} 
+      offset={-100} 
       duration={500}
       style={{ cursor: 'pointer' }} >{t("home.NavBar-Services")}</Link></li>
                 <li><Link to="portfolio" 
