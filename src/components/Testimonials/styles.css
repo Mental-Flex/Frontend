@@ -37,7 +37,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #FFA500;
+  background-image: url('https://img.freepik.com/foto-gratis/fondo-abstracto-textura_1258-30447.jpg');
 
   /* Center slide text vertically */
   display: flex;
