@@ -37,7 +37,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-image: url('https://www.todofondos.net/wp-content/uploads/naranja-full-hd-orange-wallpaper-21840.-wallpaper-naranja-liso-1024x640.jpg');
+  background-image: url('../../../public/assets/images/fondo1.jpg');
 
   /* Center slide text vertically */
   display: flex;

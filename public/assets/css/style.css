@@ -857,7 +857,7 @@ h6 {
   }
 }
 .funfacts {
-  background-image: url('https://www.todofondos.net/wp-content/uploads/naranja-full-hd-orange-wallpaper-21840.-wallpaper-naranja-liso-1024x640.jpg');
+  background-image: url('../images/fondo1.jpg');
   background-color:  #FF5400;
   background-position: center center;
   background-attachment: fixed;
@@ -963,7 +963,7 @@ ul.styled-list.list-star li:before {
   content: '\f006';
 }
 .call-2-acction {
-  background-image: url('https://www.todofondos.net/wp-content/uploads/naranja-full-hd-orange-wallpaper-21840.-wallpaper-naranja-liso-1024x640.jpg');
+  background-image: url('../images/fondo1.jpg');
   padding: 100px 0;
   background-attachment: fixed;
   background-color:  #FF5400;
