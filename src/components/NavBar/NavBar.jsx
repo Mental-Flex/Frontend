@@ -13,6 +13,8 @@ import {Link} from 'react-scroll'
 
 const NavBar = () => {
 
+  const [isActive, setIsActive] = useState(false);
+
    const [t, i18n] = useTranslation("global")
     
 
@@ -21,6 +23,11 @@ const NavBar = () => {
     const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const handleClick = () => {
+    setIsActive(true);
+    
+  };
 
   
 
@@ -44,7 +51,8 @@ const NavBar = () => {
       smooth={true} 
       offset={-100} 
       duration={500}
-      style={{ cursor: 'pointer' }} ><img src="assets/photos/logo3.png" alt="" className="img-responsive"/></Link>
+      style={{ cursor: 'pointer' }} 
+      activeClass='false'><img src="assets/photos/logo3.png" alt="" className="img-responsive"/></Link>
         </div>
 
         
@@ -63,6 +71,7 @@ const NavBar = () => {
       offset={50} 
       duration={500}
       style={{ cursor: 'pointer' }}
+      onClick={handleClick}
       >{t("home.NavBar-About")}</Link></li>
                 <li><Link to="service" 
       spy={true} 
