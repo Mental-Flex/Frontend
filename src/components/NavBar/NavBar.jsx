@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import './Navbar.css'
 import { useAuth0 } from "@auth0/auth0-react";
 import SideBar from './SideBar';
 import {useTranslation} from 'react-i18next'
+import {Link} from 'react-scroll'
+
+
 
 
 const NavBar = () => {
@@ -37,24 +39,59 @@ const NavBar = () => {
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#"><img src="assets/photos/logo3.png" alt="" className="img-responsive"/></a>
+            <Link className="navbar-brand"to="home" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500}
+      style={{ cursor: 'pointer' }} ><img src="assets/photos/logo3.png" alt="" className="img-responsive"/></Link>
         </div>
 
         
         <div className="collapse navbar-collapse main-nav" id="sept-main-nav">
             <ul className="nav navbar-nav navbar-right">
-                <li ><a href="#home">{t("home.NavBar-Home")}</a></li>
+                <li ><Link to="home" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      style={{ cursor: 'pointer' }}>{t("home.NavBar-Home")}</Link></li>
                 
-                <li><a href="#about">{t("home.NavBar-About")}</a></li>
-                <li><a href="#service">{t("home.NavBar-Services")}</a></li>
-                <li><a href="#portfolio">{t("home.NavBar-Blog")}</a></li>
-                <li><a href="#pricing">{t("home.NavBar-Pricing")}</a></li>
-                <li><a href="#contact">{t("home.NavBar-Contact")}</a></li>
+                <li><Link  to="about" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500}
+      style={{ cursor: 'pointer' }}>{t("home.NavBar-About")}</Link></li>
+                <li><Link to="service" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500}
+      style={{ cursor: 'pointer' }} >{t("home.NavBar-Services")}</Link></li>
+                <li><Link to="portfolio" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      style={{ cursor: 'pointer' }}>{t("home.NavBar-Blog")}</Link></li>
+                <li><Link  to="pricing" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500}
+      style={{ cursor: 'pointer' }} >{t("home.NavBar-Pricing")}</Link></li>
+                <li><Link to="contact" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      style={{ cursor: 'pointer' }}>{t("home.NavBar-Contact")}</Link></li>
                 <li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
                 <li> <a onClick={()=> i18n.changeLanguage("en")} style={{ cursor: 'pointer' }}>EN </a></li>
 
                 
-                <li><a  onClick={showSidebar}><FaIcons.FaBars/></a>
+                <li><a  onClick={showSidebar} style={{ cursor: 'pointer' }} ><FaIcons.FaBars/></a>
 
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
