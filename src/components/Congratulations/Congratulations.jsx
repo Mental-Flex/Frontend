@@ -43,14 +43,18 @@ const Congratulations = () => {
 						<h3>{t("congratulations.congratulations1")}</h3>
                         <br/>
                         <h3>{t("congratulations.congratulations2")}</h3>
+                        <br/>
+                        <br/>
+                        <br/>
 						<p>{t("congratulations.congratulations3")}</p>
+            <p>{t("congratulations.congratulations4")}</p>
 					</div>
 
                
 
 <div>
 
-<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '20vh' }}>
                 <button className="btn btn-main btn-lg" style={{ fontSize: '2em', padding: '20px' }} onClick={() => { window.location.href = "http://localhost:3001/" }} data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending...">
                 {t("congratulations.return")}
                 </button>

@@ -171,7 +171,8 @@
     "congratulations": {
         "congratulations1": "Felicidades por tu compra! Has invertido en tu salud mental y bienestar.",
         "congratulations2": "Muchas gracias por confiar en Mental Flex.",
-        "congratulations3": "Te estará llegando un email con los detalles de Google Meet en breve.",
+        "congratulations3": "Te estará llegando un email ",
+        "congratulations4": "con los detalles de Google Meet en breve.",
         "return": "VOLVER"
 
    }
