@@ -16,7 +16,7 @@ import { Route, Routes, useLocation} from 'react-router-dom';
 import Detail from "../components/Detail";
 import NavBar from "../components/NavBar/NavBar";
 import FormBlog from "../components/Blog/FormBlog";
-import Orders from "../components/Orders/Orders";
+
 import PublicTestimonial from "../components/Testimonials/PublicTestimonial";
 
 
@@ -53,7 +53,6 @@ const Landing = () => {
                 } />
                 <Route path="/detail/:idPublication" element={<Detail />} />
                 <Route path='/public' element={<FormBlog />} />
-                <Route path='/orders' element={<Orders />} />
                 <Route path="/testimonial" element={<PublicTestimonial/>}/>
                 
                 

@@ -99,11 +99,7 @@ console.log(role)
 
 </li>
 
-<li className='nav-text'>
-<Link to='/orders'>
-  <span>{t("home.sidebar-orders")}</span>
-</Link>
-</li>
+
 </lu>
  
            )}

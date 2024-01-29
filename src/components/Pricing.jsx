@@ -23,6 +23,15 @@ const Pricing = () => {
 				</div>
 			</div>
 			<div className="row">
+
+
+
+
+
+
+
+
+
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
@@ -40,16 +49,9 @@ const Pricing = () => {
 						<div className="pricing-footer">
 							
 							<button
-            onClick={async() => {
+            onClick={() => {
 
-				const response = await fetch('http://localhost:3000/payment/createOrder1', {
-
-					method: 'POST'
-
-				})
-
-				const data = await response.json()
-				window.location.href = data.links[1].href
+				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
              
             }}
 			className="btn btn-default"
@@ -81,16 +83,10 @@ const Pricing = () => {
 						</div>
 						<div className="pricing-footer">
 						<button
-            onClick={async() => {
+            onClick={() => {
 
-				const response = await fetch('http://localhost:3000/payment/createOrder3', {
-
-					method: 'POST'
-
-				})
-
-				const data = await response.json()
-				window.location.href = data.links[1].href
+				
+				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
              
             }}
 			className="btn btn-default"
@@ -120,17 +116,11 @@ const Pricing = () => {
 						</div>
 						<div className="pricing-footer">
 						<button
-            onClick={async() => {
+            onClick={() => {
 
-				const response = await fetch('http://localhost:3000/payment/createOrder2', {
+				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
 
-					method: 'POST'
-
-				})
-
-				const data = await response.json()
-				window.location.href = data.links[1].href
-             
+				
             }}
 			className="btn btn-default"
             
@@ -157,16 +147,9 @@ const Pricing = () => {
 						</div>
 						<div className="pricing-footer">
 						<button
-            onClick={async() => {
+            onClick={() => {
 
-				const response = await fetch('http://localhost:3000/payment/createOrder4', {
-
-					method: 'POST'
-
-				})
-
-				const data = await response.json()
-				window.location.href = data.links[1].href
+				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
              
             }}
 			className="btn btn-default"
@@ -196,16 +179,9 @@ const Pricing = () => {
 						</div>
 						<div className="pricing-footer">
 						<button
-            onClick={async() => {
+            onClick={() => {
 
-				const response = await fetch('http://localhost:3000/payment/createOrder4', {
-
-					method: 'POST'
-
-				})
-
-				const data = await response.json()
-				window.location.href = data.links[1].href
+				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
              
             }}
 			className="btn btn-default"
