@@ -19,6 +19,9 @@ import FormBlog from "../components/Blog/FormBlog";
 
 import PublicTestimonial from "../components/Testimonials/PublicTestimonial";
 
+import Purchase from "../components/Purchase/Purchase";
+import Congratulations from "../components/Congratulations/Congratulations";
+
 
 
 
@@ -54,6 +57,9 @@ const Landing = () => {
                 <Route path="/detail/:idPublication" element={<Detail />} />
                 <Route path='/public' element={<FormBlog />} />
                 <Route path="/testimonial" element={<PublicTestimonial/>}/>
+                <Route path="/purchase" element={<Purchase/>}/>
+                <Route path="/congratulations" element={<Congratulations/>}/>
+
                 
                 
 
