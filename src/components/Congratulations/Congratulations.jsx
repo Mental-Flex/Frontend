@@ -24,7 +24,7 @@ const Congratulations = () => {
 
         <>
 
-        <div>
+        
 
 
         <nav className='navbar' >
@@ -48,11 +48,20 @@ const Congratulations = () => {
 
                
 
-
-  </div>
-
-
 <div>
+
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+                <button className="btn btn-main btn-lg" style={{ fontSize: '2em', padding: '20px' }} onClick={() => { window.location.href = "http://localhost:3001/" }} data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending...">
+                {t("congratulations.return")}
+                </button>
+            </div>
+
+
+</div>
+  
+
+
+
 
     
 <footer className="site-footer">
@@ -68,7 +77,7 @@ const Congratulations = () => {
 			</div>
 		</div>
 	</footer>
-</div>
+
         </>
     )
 }
