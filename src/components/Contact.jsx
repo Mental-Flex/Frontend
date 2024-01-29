@@ -5,9 +5,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NavBar from "./NavBar/NavBar";
 
+import {useTranslation} from 'react-i18next'
 
 
 const Contact = () => {
+
+  const [t, i18n] = useTranslation("global")
 
   const form = useRef();
 
@@ -53,8 +56,8 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-title st-center">
-              <h3>Contact Us</h3>
-              <p>Get in Touch with Us</p>
+              <h3>{t("contact.contact1")}</h3>
+              <p>{t("contact.contact2")}</p>
             </div>
           </div>
         </div>
@@ -63,14 +66,14 @@ const Contact = () => {
 
 
           <form  className="contact-form"ref={form} onSubmit={sendEmail}>
-      <label >Name</label>
+      <label >{t("contact.name")}</label>
       <input className="form-control" type="text" name="user_name" />
       <label>Email</label>
       <input className="form-control" type="email" name="user_email"  />
-      <label>Message</label>
+      <label>{t("contact.message")}</label>
       <textarea className="form-control" rows="10"  name="message" />
       <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i class="fa fa-paper-plane "></i>
-							Send</button>
+      {t("contact.send")}</button>
     </form>
 
 
@@ -80,22 +83,13 @@ const Contact = () => {
           </div>
           <div className="col-md-6">
             <p>
-              Homines praetore aperiam aegritudine turpe quietus, amorem errore meo horreat triario quantus rectas tollitur.
-              Infimum audiebamus saluto disciplina praetermittenda, aspernatur vocent firmitatem contenta eademque ibidem quales
-              efficiat. Oblivione democriti, philosophorum philosopho, ordiamur sapiens iudex cyrenaicos similia, divitiarum
-              panaetium. Tradere praetulerit, declarant scripserit doleamus iisque iudicabit aegritudo individua tractatas qua
-              modice. Difficilius loqueretur improbe aetatis consectetur solis velint, grata quiddam partus occulta delectari
-              maior, theseo eveniunt, turpius nesciunt amicitias constantia seque, utraque, statu genus scriptorem fugit fuissent
-              duxit, compluribus primos scaevolam.
+            {t("contact.description")}
             </p>
             <address>
-              <strong>Twitter, Inc.</strong>
+              <strong>mentalflexinfo@gmail.com</strong>
               <br />
-              795 Folsom Ave, Suite 600
-              <br />
-              San Francisco, CA 94107
-              <br />
-              <abbr title="Phone">P:</abbr> (123) 456-7890
+              (+54) 1150451372
+             
             </address>
           </div>
         </div>

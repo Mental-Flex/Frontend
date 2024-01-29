@@ -1,8 +1,11 @@
 import React from "react"
 import NavBar from "./NavBar/NavBar"
+import {useTranslation} from 'react-i18next'
 
 
 const Pricing = () => {
+
+	const [t, i18n] = useTranslation("global")
 
     return(
 
@@ -14,8 +17,8 @@ const Pricing = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="section-title st-center">
-						<h3>Our Packages</h3>
-						<p>Avocent deditum long</p>
+						<h3>{t("pricing.pricing1")}</h3>
+						<p>{t("pricing.pricing2")}</p>
 					</div>
 				</div>
 			</div>
@@ -23,18 +26,15 @@ const Pricing = () => {
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
-							<div className="pt-price">$9.99<small>/m</small></div>
-							<div className="pt-name">Standard</div>
+							<div className="pt-price">$50</div>
+							<div className="pt-name">{t("pricing.individual1")}</div>
 						</div>
 						<div className="pricing-body">
 							<ul>
-								<li><i className="fa fa-check"></i> 2GB Space</li>
-								<li><i className="fa fa-check"></i> 10GB Bandwidth</li>
-								<li><i className="fa fa-check"></i> Free Domain</li>
-								<li><i className="fa fa-times"></i> Free Email</li>
-								<li><i className="fa fa-times"></i> Free cPanel</li>
-								<li><i className="fa fa-times"></i> Free FTP</li>
-								<li><i className="fa fa-times"></i> Free Support</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individual2")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individual3")}</li>
+								
+								
 							</ul>
 						</div>
 						<div className="pricing-footer">
@@ -55,66 +55,28 @@ const Pricing = () => {
 			className="btn btn-default"
             
           >
-           Purchase
+           {t("pricing.purchase")}
           </button>
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
-					<div className="pricing-table">
-						<div className="pricing-header">
-							<div className="pt-price">$19.99<small>/m</small></div>
-							<div className="pt-name">Premium</div>
-						</div>
-						<div className="pricing-body">
-							<ul>
-								<li><i className="fa fa-check"></i> 5GB Space</li>
-								<li><i className="fa fa-check"></i> 50GB Bandwidth</li>
-								<li><i className="fa fa-check"></i> Free Domain</li>
-								<li><i className="fa fa-check"></i> Free Email</li>
-								<li><i className="fa fa-times"></i> Free cPanel</li>
-								<li><i className="fa fa-times"></i> Free FTP</li>
-								<li><i className="fa fa-times"></i> Free Support</li>
-							</ul>
-						</div>
-						<div className="pricing-footer">
-						<button
-            onClick={async() => {
 
-				const response = await fetch('http://localhost:3000/payment/createOrder2', {
-
-					method: 'POST'
-
-				})
-
-				const data = await response.json()
-				window.location.href = data.links[1].href
-             
-            }}
-			className="btn btn-default"
-            
-          >
-           Purchase
-          </button>
-						</div>
-					</div>
-				</div>
 				<div className="col-md-3">
 					<div className="pricing-table featured">
 						<div className="pricing-header">
-							<div className="pt-price">$49.99<small>/m</small></div>
-							<div className="pt-name">Developer</div>
-							<div className="featured-text">Best Value</div>
+							<div className="pt-price">$180</div>
+							<div className="pt-name">{t("pricing.individualMonth2")}</div>
+							<div className="featured-text">{t("pricing.individualMonth1")}</div>
 						</div>
 						<div className="pricing-body">
 							<ul>
-								<li><i className="fa fa-check"></i> 20GB Space</li>
-								<li><i className="fa fa-check"></i> 1TB Bandwidth</li>
-								<li><i className="fa fa-check"></i> Free Domain</li>
-								<li><i className="fa fa-check"></i> Free Email</li>
-								<li><i className="fa fa-check"></i> Free cPanel</li>
-								<li><i className="fa fa-check"></i> Free FTP</li>
-								<li><i className="fa fa-times"></i> Free Support</li>
+								
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonth3")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonth4")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonth5")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonth6")}</li>
+								
+								
 							</ul>
 						</div>
 						<div className="pricing-footer">
@@ -134,26 +96,63 @@ const Pricing = () => {
 			className="btn btn-default"
             
           >
-           Purchase
+           {t("pricing.purchase")}
           </button>
 						</div>
 					</div>
 				</div>
+
+
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
-							<div className="pt-price">$99.99<small>/m</small></div>
-							<div className="pt-name">Enterprise</div>
+							<div className="pt-price">$360</div>
+							<div className="pt-name">{t("pricing.individualMonthx2-1")}</div>
 						</div>
 						<div className="pricing-body">
 							<ul>
-								<li><i className="fa fa-check"></i> Unlimited Space</li>
-								<li><i className="fa fa-check"></i> Unlimited Bandwidth</li>
-								<li><i className="fa fa-check"></i> Free Domain</li>
-								<li><i className="fa fa-check"></i> Free Email</li>
-								<li><i className="fa fa-check"></i> Free cPanel</li>
-								<li><i className="fa fa-check"></i> Free FTP</li>
-								<li><i className="fa fa-check"></i> Free Support</li>
+								<li><i className="fa fa-check"></i>{t("pricing.individualMonthx2-2")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-3")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-4")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-5")}</li>
+								
+							</ul>
+						</div>
+						<div className="pricing-footer">
+						<button
+            onClick={async() => {
+
+				const response = await fetch('http://localhost:3000/payment/createOrder2', {
+
+					method: 'POST'
+
+				})
+
+				const data = await response.json()
+				window.location.href = data.links[1].href
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           {t("pricing.purchase")}
+          </button>
+						</div>
+					</div>
+				</div>
+				
+				<div className="col-md-3">
+					<div className="pricing-table">
+						<div className="pricing-header">
+							<div className="pt-price">$65</div>
+							<div className="pt-name">{t("pricing.couples1")}</div>
+						</div>
+						<div className="pricing-body">
+							<ul>
+								<li><i className="fa fa-check"></i> {t("pricing.couples2")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.couples3")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.couples4")}</li>
+								
 							</ul>
 						</div>
 						<div className="pricing-footer">
@@ -173,11 +172,53 @@ const Pricing = () => {
 			className="btn btn-default"
             
           >
-           Purchase
+           {t("pricing.purchase")}
           </button>
 						</div>
 					</div>
 				</div>
+
+
+				<div className="col-md-3">
+					<div className="pricing-table">
+						<div className="pricing-header">
+							<div className="pt-price">$416</div>
+							<div className="pt-name">{t("pricing.couplesPackage1")}</div>
+						</div>
+						<div className="pricing-body">
+							<ul>
+								<li><i className="fa fa-check"></i> {t("pricing.couplesPackage2")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.couplesPackage3")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.couplesPackage4")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.couplesPackage5")}</li>
+								
+							</ul>
+						</div>
+						<div className="pricing-footer">
+						<button
+            onClick={async() => {
+
+				const response = await fetch('http://localhost:3000/payment/createOrder4', {
+
+					method: 'POST'
+
+				})
+
+				const data = await response.json()
+				window.location.href = data.links[1].href
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           {t("pricing.purchase")}
+          </button>
+						</div>
+					</div>
+				</div>
+
+
+
 			</div>
 		</div>
 	</section>

@@ -15,10 +15,10 @@ const Questions = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					 <h2 className="tac">frequently asked questions</h2> 
+					 <h2 className="tac">{t("questions.questions1")}</h2> 
 					<div className="section-title st-center">
-						<h3>Some questions</h3>
-						<p>frequently asked questions</p>
+						<h3>{t("questions.questions2")}</h3>
+						<p>{t("questions.questions3")}</p>
 					</div>
 				</div>
 			</div>
@@ -39,8 +39,30 @@ const Questions = () => {
 						<p>{t("questions.response3")}</p>
 					</div>
 					<div className="faq">
-						<h3><i className="fa fa-question-circle"></i>{t("questions.question4")}</h3>
+						<h3><i className="fa fa-question-circle"></i> {t("questions.question4")}</h3>
 						<p>{t("questions.response4")}</p>
+					</div>
+				</div>
+
+				<div className="col-md-6">
+					<div className="faq">
+						<h3><i className="fa fa-question-circle"></i> {t("questions.question5")}</h3>
+						<p>{t("questions.response5")}</p>
+					</div>
+					<div className="faq">
+						<h3><i className="fa fa-question-circle"></i> {t("questions.question6")}</h3>
+						<p>{t("questions.response6")}</p>
+					</div>
+				</div>
+
+				<div className="col-md-6">
+					<div className="faq">
+						<h3><i className="fa fa-question-circle"></i> {t("questions.question7")}</h3>
+						<p>{t("questions.response7")}</p>
+					</div>
+					<div className="faq">
+						<h3><i className="fa fa-question-circle"></i> {t("questions.question8")}</h3>
+						<p>{t("questions.response8")}</p>
 					</div>
 				</div>
 			</div>
