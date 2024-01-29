@@ -51,7 +51,7 @@ const Pricing = () => {
 							<button
             onClick={() => {
 
-				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
+				 window.location.href = t("pricing.URL1") 
              
             }}
 			className="btn btn-default"

@@ -1,24 +1,14 @@
-import React, { useEffect } from "react"
+import React from "react"
 import {useTranslation} from 'react-i18next'
-import './Congratulations.css'
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import './Purchase.css'
+import Footer from "../Footer"
 
 
 
 
-
-
-const Congratulations = () => {
+const Purchase2 = () => {
 
     const [t, i18n] = useTranslation("global")
-
-    useEffect(() => {
-        toast.success('Successful purchase!', {
-            position: 'bottom-left',
-          });
-    }, [])
 
     return(
 
@@ -27,7 +17,7 @@ const Congratulations = () => {
         <div>
 
 
-        <nav className='navbar' >
+<nav className='navbar' >
           <ul >
 
             <li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
@@ -38,13 +28,26 @@ const Congratulations = () => {
 
 
 
+                       
+                        
+                   
 
-        <div className="section-title st-center">
-						<h3>{t("congratulations.congratulations1")}</h3>
-                        <br/>
-                        <h3>{t("congratulations.congratulations2")}</h3>
-						<p>{t("congratulations.congratulations3")}</p>
-					</div>
+
+
+        <div className="container">
+        <div className="row">
+            <div className="col-md-12">
+                <div className="section-title st-center">
+                    <h3>{t("confirmation.confirmation1")}</h3>
+                    <p>{t("confirmation.confirmation2")}</p>
+                </div>
+
+                </div>
+
+                </div>
+
+                </div>
+
 
                
 
@@ -54,12 +57,13 @@ const Congratulations = () => {
 
 <div>
 
-    
 <footer className="site-footer">
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
 					&copy; <a href="https://www.cantothemes.com">Mental Flex</a> 2023.
+
+                    
 					
 					Email <a href="https://www.cantothemes.com">mentalflexinfo@gmail.com</a>
 					
@@ -73,4 +77,4 @@ const Congratulations = () => {
     )
 }
 
-export default Congratulations
+export default Purchase2

@@ -6,7 +6,7 @@ import Footer from "../Footer"
 
 
 
-const Purchase = () => {
+const Purchase5 = () => {
 
     const [t, i18n] = useTranslation("global")
 
@@ -77,4 +77,4 @@ const Purchase = () => {
     )
 }
 
-export default Purchase
+export default Purchase5

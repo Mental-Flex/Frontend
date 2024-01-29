@@ -135,7 +135,9 @@
 
     "couplesPackage4": "-20% per session: $52",
 
-    "couplesPackage5": "8 sessions are recommended for Couples Therapy"
+    "couplesPackage5": "8 sessions are recommended for Couples Therapy",
+
+    "URL1": "http://localhost:3001/purchase1EN"
 
 
     },
@@ -151,10 +153,7 @@
         
     },
 
-    "confirmation": {
-        "confirmation1": "Book your appointment",
-        "confirmation2": "MENTAL FLEX"
-    },
+ 
 
     "congratulations": {
          "congratulations1": "Congratulations on your purchase! You've invested in your mental health and well-being.",
