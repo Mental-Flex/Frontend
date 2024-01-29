@@ -58,7 +58,7 @@ const Purchase4EN = () => {
 
                     
 					
-					Email <a href="https://www.cantothemes.com">mentalflexinfo@gmail.com</a>
+					Email <a href="mailto:mentalflexinfo@gmail.com">mentalflexinfo@gmail.com</a>
 					
 				</div>
 				

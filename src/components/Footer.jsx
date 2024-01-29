@@ -13,9 +13,9 @@ const Footer = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					&copy; <a href="https://www.cantothemes.com">Mental Flex</a> 2023.
+					&copy; <a >Mental Flex</a> 2023.
 					
-					Made by <a href="https://www.cantothemes.com">Sofia Victoria Franco</a>
+					Made by <a >Sofia Victoria Franco</a>
 					
 				</div>
 				

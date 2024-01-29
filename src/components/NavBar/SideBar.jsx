@@ -90,14 +90,24 @@ console.log(role)
 
 
 <lu>
-
-
-<li  className='nav-text'>
+  
+  <li  className='nav-text'>
 <Link to='/public'>
   <span>{t("home.sidebar-public")}</span>
 </Link>
 
 </li>
+
+<li  className='nav-text' >
+<Link  onClick={handleLogout}>
+  <span>{t("home.sidebar-logout")}</span>
+</Link>
+</li>
+
+
+
+
+
 
 
 </lu>
@@ -111,6 +121,12 @@ console.log(role)
 
 <lu>
 
+<li  className='nav-text' >
+<Link  onClick={handleLogout}>
+  <span>{t("home.sidebar-logout")}</span>
+</Link>
+</li>
+
 
 <li  className='nav-text'>
 <Link to='/testimonial'>
@@ -119,43 +135,14 @@ console.log(role)
 
 </li>
 
+
+
+
 </lu>
  
            )}
 
 
-
-
-{isAuthenticated && (
-
-
-
-<li  className='nav-text' >
-<Link  onClick={handleLogout}>
-  <span>{t("home.sidebar-logout")}</span>
-</Link>
-</li>
-
-               
-                
-             )}
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    
-                                 
-    
 
      
     </>
