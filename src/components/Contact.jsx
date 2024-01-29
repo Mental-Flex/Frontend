@@ -12,17 +12,17 @@ const Contact = () => {
 
   const [t, i18n] = useTranslation("global")
 
-  const form = useRef();
+  const form = useRef(); 
 
   const sendEmail = async (e) => {
     e.preventDefault();
   
     try {
       const result = await emailjs.sendForm(
-        'service_0xktgv9',
-        'template_iaj1yd3',
+        'service_ds5s0aa',
+        'template_idb5yvp',
         form.current,
-        'bKkeZdeJY75nVnQm4'
+        'FMzflINRgRtaizQGN'
       );
   
       console.log(result.text);
