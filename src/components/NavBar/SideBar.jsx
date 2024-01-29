@@ -61,10 +61,7 @@ console.log(role)
   <span>{t("home.sideBar-login")}</span>
 </Link>
 </li>
-
-            
-              
-              
+  
             )
 
              }
@@ -105,11 +102,6 @@ console.log(role)
 </li>
 
 
-
-
-
-
-
 </lu>
  
            )}
@@ -120,23 +112,19 @@ console.log(role)
 
 
 <lu>
+  
+<li  className='nav-text'>
+<Link to='/testimonial'>
+  <span>{t("home.sidebar-testimonial")}</span>
+</Link>
+</li>
+
 
 <li  className='nav-text' >
 <Link  onClick={handleLogout}>
   <span>{t("home.sidebar-logout")}</span>
 </Link>
 </li>
-
-
-<li  className='nav-text'>
-<Link to='/testimonial'>
-  <span>{t("home.sidebar-testimonial")}</span>
-</Link>
-
-</li>
-
-
-
 
 </lu>
  
