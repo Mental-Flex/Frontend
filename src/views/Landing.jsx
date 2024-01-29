@@ -24,6 +24,14 @@ import Congratulations from "../components/Congratulations/Congratulations";
 
 import Purchase1EN from "../components/Purchase/Purchase1EN";
 import Purchase1ES from "../components/Purchase/Purchase1ES";
+import Purchase2EN from "../components/Purchase/Purchase2EN";
+import Purchase2ES from "../components/Purchase/Purchase2ES.JSX";
+import Purchase3EN from "../components/Purchase/Purchase3EN";
+import Purchase3ES from "../components/Purchase/Purchase3ES";
+import Purchase4EN from "../components/Purchase/Purchase4EN";
+import Purchase4ES from "../components/Purchase/Purchase4ES";
+import Purchase5EN from "../components/Purchase/Purchase5EN";
+import Purchase5ES from "../components/Purchase/Purchase5ES";
 
 
 
@@ -62,11 +70,17 @@ const Landing = () => {
                 <Route path="/testimonial" element={<PublicTestimonial/>}/>
                 <Route path="/purchase1EN" element={<Purchase1EN/>}/>
                 <Route path="/purchase1ES" element={<Purchase1ES/>}/>
+                <Route path="/purchase2EN" element={<Purchase2EN/>}/>
+                <Route path="/purchase2ES" element={<Purchase2ES/>}/>
+                <Route path="/purchase3EN" element={<Purchase3EN/>}/>
+                <Route path="/purchase3ES" element={<Purchase3ES/>}/>
+                <Route path="/purchase4EN" element={<Purchase4EN/>}/>
+                <Route path="/purchase4ES" element={<Purchase4ES/>}/>
+                <Route path="/purchase5EN" element={<Purchase5EN/>}/>
+                <Route path="/purchase5ES" element={<Purchase5ES/>}/>
                 
-                {/* <Route path="/purchase2" element={<Purchase2/>}/>
-                <Route path="/purchase3" element={<Purchase3/>}/>
-                <Route path="/purchase4" element={<Purchase4/>}/>
-                <Route path="/purchase5" element={<Purchase5/>}/> */}
+                
+                
                 
                 <Route path="/congratulations" element={<Congratulations/>}/>
 

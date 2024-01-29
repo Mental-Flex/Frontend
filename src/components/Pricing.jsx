@@ -86,7 +86,7 @@ const Pricing = () => {
             onClick={() => {
 
 				
-				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
+				window.location.href = t("pricing.URL2") 
              
             }}
 			className="btn btn-default"
@@ -118,7 +118,7 @@ const Pricing = () => {
 						<button
             onClick={() => {
 
-				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
+				window.location.href = t("pricing.URL3") 
 
 				
             }}
@@ -149,7 +149,7 @@ const Pricing = () => {
 						<button
             onClick={() => {
 
-				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
+				window.location.href = t("pricing.URL4") 
              
             }}
 			className="btn btn-default"
@@ -181,7 +181,7 @@ const Pricing = () => {
 						<button
             onClick={() => {
 
-				window.location.href = 'https://tidycal.com/mental-flex/individualsession'
+				window.location.href = t("pricing.URL5") 
              
             }}
 			className="btn btn-default"

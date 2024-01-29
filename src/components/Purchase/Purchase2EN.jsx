@@ -6,7 +6,7 @@ import './Purchase.css'
 
 
 
-const Purchase1EN = () => {
+const Purchase2EN = () => {
 
     const [t, i18n] = useTranslation("global")
 
@@ -36,8 +36,8 @@ const Purchase1EN = () => {
                 <div className="section-title st-center">
                     <h3>Book your appointment</h3>
                     <p>MENTAL FLEX</p>
-                    <div className="tidycal-embed"  data-path="mental-flex/individualsession"></div>
-
+                    <div className="tidycal-embed"  data-path="mental-flex/monthlyindividualsessions"></div>
+                    
                 </div>
                 
                 </div>
@@ -70,4 +70,4 @@ const Purchase1EN = () => {
     )
 }
 
-export default Purchase1EN
+export default Purchase2EN

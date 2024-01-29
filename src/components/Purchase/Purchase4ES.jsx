@@ -1,12 +1,12 @@
 import React, {useEffect} from "react"
 import {useTranslation} from 'react-i18next'
 import './Purchase.css'
+import Footer from "../Footer"
 
 
 
 
-
-const Purchase1EN = () => {
+const Purchase4ES = () => {
 
     const [t, i18n] = useTranslation("global")
 
@@ -34,20 +34,19 @@ const Purchase1EN = () => {
         <div className="row">
             <div className="col-md-12">
                 <div className="section-title st-center">
-                    <h3>Book your appointment</h3>
+                    <h3>Reserva tu turno</h3>
                     <p>MENTAL FLEX</p>
-                    <div className="tidycal-embed"  data-path="mental-flex/individualsession"></div>
-
-                </div>
-                
+                    <div class="tidycal-embed" data-path="mental-flex/sesionterapiadeparejasl"></div>
                 </div>
 
                 </div>
 
                 </div>
 
-    
-    
+                </div>
+
+  
+
 
 
 <footer className="site-footer">
@@ -67,7 +66,8 @@ const Purchase1EN = () => {
 	</footer>
 </div>
         
-    )
+)
+
 }
 
-export default Purchase1EN
+export default Purchase4ES

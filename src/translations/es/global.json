@@ -142,7 +142,15 @@
 
     "couplesPackage5": "Se recomiendan 8 sesiones para la Terapia de Parejas",
 
-    "URL1": "http://localhost:3001/purchase1ES"
+    "URL1": "http://localhost:3001/purchase1ES",
+
+    "URL2": "http://localhost:3001/purchase2ES",
+
+    "URL3": "http://localhost:3001/purchase3ES",
+
+    "URL4": "http://localhost:3001/purchase4ES",
+
+    "URL5": "http://localhost:3001/purchase5ES"
 
 
     },
