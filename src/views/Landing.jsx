@@ -31,7 +31,7 @@ import Purchase4EN from "../components/Purchase/Purchase4EN";
 import Purchase4ES from "../components/Purchase/Purchase4ES";
 import Purchase5EN from "../components/Purchase/Purchase5EN";
 import Purchase5ES from "../components/Purchase/Purchase5ES";
-
+import Purchase2ES from "../components/Purchase/Purchase2ES";
 
 
 
@@ -77,6 +77,7 @@ const Landing = () => {
                 <Route path="/purchase4ES" element={<Purchase4ES/>}/>
                 <Route path="/purchase5EN" element={<Purchase5EN/>}/>
                 <Route path="/purchase5ES" element={<Purchase5ES/>}/>
+                <Route path="/purchase2ES" element={<Purchase2ES/>}/>
                 
                 
                 
