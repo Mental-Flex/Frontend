@@ -92,12 +92,14 @@ color: #333;
 
   font-size: 30px;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .slide .mydetails {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 
 }
 
