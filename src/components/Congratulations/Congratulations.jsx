@@ -55,7 +55,7 @@ const Congratulations = () => {
 <div>
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '20vh' }}>
-                <button className="btn btn-main btn-lg" style={{ fontSize: '2em', padding: '20px' }} onClick={() => { window.location.href = "http://localhost:3001/" }} data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending...">
+                <button className="btn btn-main btn-lg" style={{ fontSize: '2em', padding: '20px' }} onClick={() => { window.location.href = "https://www.mental-flex.com/" }} data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending...">
                 {t("congratulations.return")}
                 </button>
             </div>
