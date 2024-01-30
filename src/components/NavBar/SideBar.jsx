@@ -57,7 +57,7 @@ console.log(role)
 {!isAuthenticated && (
 
 <li  className='nav-text'>
-<Link onClick={loginWithPopup}>
+<Link onClick={loginWithPopup} className="logout-button">
   <span>{t("home.sideBar-login")}</span>
 </Link>
 </li>
@@ -68,13 +68,15 @@ console.log(role)
 
 
                {
-                  isAuthenticated && ( <img
+                  isAuthenticated &&  ( 
+                  <div className="user-info" >
+                  <img
                   className="object-cover w-full h-full overflow-hidden"
                   style={{borderRadius: 100}}
                   src={user.picture}
                   alt={user.nickname}
                 />
-                 
+                 </div>
                  )
                 }
  
@@ -89,14 +91,14 @@ console.log(role)
 <lu>
   
   <li  className='nav-text'>
-<Link to='/public'>
+<Link to='/public' className="logout-button"> 
   <span>{t("home.sidebar-public")}</span>
 </Link>
 
 </li>
 
 <li  className='nav-text' >
-<Link  onClick={handleLogout}>
+<Link  onClick={handleLogout} className="logout-button">
   <span>{t("home.sidebar-logout")}</span>
 </Link>
 </li>
@@ -108,7 +110,7 @@ console.log(role)
 
 
 
-{isAuthenticated && (
+{isAuthenticated && role !== 'admin' && (
 
 
 <lu>
@@ -121,7 +123,7 @@ console.log(role)
 
 
 <li  className='nav-text' >
-<Link  onClick={handleLogout}>
+<Link  onClick={handleLogout} className="logout-button">
   <span>{t("home.sidebar-logout")}</span>
 </Link>
 </li>
