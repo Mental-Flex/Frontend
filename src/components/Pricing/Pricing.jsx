@@ -108,7 +108,7 @@ const Pricing = () => {
 						</div>
 						<div className="pricing-body">
 							<ul>
-								<li><i className="fa fa-check"></i>{t("pricing.individualMonthx2-2")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-2")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-3")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-4")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.individualMonthx2-5")}</li>
