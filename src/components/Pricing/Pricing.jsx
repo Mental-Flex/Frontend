@@ -1,6 +1,7 @@
 import React from "react"
-import NavBar from "./NavBar/NavBar"
+import NavBar from "../NavBar/NavBar"
 import {useTranslation} from 'react-i18next'
+import './Pricing.css'
 
 
 const Pricing = () => {
@@ -32,7 +33,7 @@ const Pricing = () => {
 
 
 
-				<div className="col-md-3">
+				<div className="col-md-3 same-height-card">
 					<div className="pricing-table">
 						<div className="pricing-header">
 							<div className="pt-price">$50</div>
@@ -63,7 +64,7 @@ const Pricing = () => {
 					</div>
 				</div>
 
-				<div className="col-md-3">
+				<div className="col-md-3 same-height-card ">
 					<div className="pricing-table featured">
 						<div className="pricing-header">
 							<div className="pt-price">$180</div>
@@ -99,7 +100,7 @@ const Pricing = () => {
 				</div>
 
 
-				<div className="col-md-3">
+				<div className="col-md-3 same-height-card">
 					<div className="pricing-table">
 						<div className="pricing-header">
 							<div className="pt-price">$360</div>
@@ -131,7 +132,7 @@ const Pricing = () => {
 					</div>
 				</div>
 				
-				<div className="col-md-3">
+				<div className="col-md-3 same-height-card">
 					<div className="pricing-table">
 						<div className="pricing-header">
 							<div className="pt-price">$65</div>
@@ -162,7 +163,11 @@ const Pricing = () => {
 				</div>
 
 
-				<div className="col-md-3">
+
+				<div className="row justify-content-center">
+
+
+				<div className="col-md-3 same-height-card" >
 					<div className="pricing-table">
 						<div className="pricing-header">
 							<div className="pt-price">$416</div>
@@ -191,6 +196,8 @@ const Pricing = () => {
           </button>
 						</div>
 					</div>
+				</div>
+
 				</div>
 
 

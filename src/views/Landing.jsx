@@ -6,7 +6,7 @@ import Services from '../components/Services';
 import Phrase from '../components/Phrase';
 import Blog from '../components/Blog/Blog';
 import Testimonials from '../components/Testimonials/Testimonials';
-import Pricing from '../components/Pricing';
+import Pricing from '../components/Pricing/Pricing';
 import Questions from '../components/Questions';
 import CallUs from '../components/CallUs';
 import Contact from '../components/Contact';
