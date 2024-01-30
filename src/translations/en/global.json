@@ -46,7 +46,8 @@
     },
 
     "phrase": {
-        "phrase1": "Happiness is not something ready-made. It comes from your own actions. - Dalai Lama",
+        "phrase1": "Happiness is not something ready-made. It comes from your own actions.",
+        "phrase3": "- Dalai Lama",
         "phrase2": "Out of your vulnerabilities will come your strength. - Sigmund Freud"
     }, 
 

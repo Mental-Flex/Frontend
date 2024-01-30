@@ -164,7 +164,7 @@ const Pricing = () => {
 
 
 
-				<div className="row justify-content-center">
+				<div >
 
 
 				<div className="col-md-3 same-height-card" >

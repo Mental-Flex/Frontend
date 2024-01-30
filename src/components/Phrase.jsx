@@ -17,6 +17,7 @@ const Phrase = () => {
 				<div className="col-md-12">
 					<div className="c2a">
 						<h2>{t("phrase.phrase1")}</h2>
+						<h2>{t("phrase.phrase3")}</h2>
 						<p>{t("phrase.phrase2")}</p>
 						
 					</div>
