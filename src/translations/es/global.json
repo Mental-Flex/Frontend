@@ -175,7 +175,22 @@
         "congratulations4": "con los detalles de Google Meet en breve.",
         "return": "VOLVER"
 
-   }
+   },
+
+
+   
+   "publicTestimonial": {
+
+    "testimonial1": "Testimonio",
+    "testimonial2": "Publica tu testimonio",
+    "name": "Nombre",
+    "description": "Descripción",
+    "social": "Red social",
+    "optional": "Opcional",
+    "image": "Imagen",
+    "public": "Publicar"
+}
+
 
 
 

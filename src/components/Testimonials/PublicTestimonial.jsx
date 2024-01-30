@@ -6,12 +6,16 @@ import { createPublication, getCategories, getTestimonials } from "../../redux/a
 import { useDispatch, useSelector } from "react-redux"
 import axios from 'axios'
 import { validate } from "./validations";
+import {useTranslation} from 'react-i18next'
 
 
 
 
 
 const PublicTestimonial = () => {
+
+  const [t, i18n] = useTranslation("global")
+
 
 
   const dispatch = useDispatch()
@@ -123,6 +127,16 @@ const PublicTestimonial = () => {
 
         <div data-spy="scroll" data-target=".main-nav">
 
+
+<nav className='navbar' >
+          <ul >
+
+            <li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
+            <li> <a onClick={()=> i18n.changeLanguage("en")} style={{ cursor: 'pointer' }}>EN </a></li>
+           
+          </ul>
+        </nav>
+
        
     
         <section className="contact" id="contact">
@@ -130,8 +144,8 @@ const PublicTestimonial = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-title st-center">
-              <h3>Testimonial</h3>
-              <p>Public your Testimonial</p>
+              <h3>{t("publicTestimonial.testimonial1")}</h3>
+              <p>{t("publicTestimonial.testimonial2")}</p>
             </div>
           </div>
         </div>
@@ -140,23 +154,23 @@ const PublicTestimonial = () => {
 
 
 <form  className="contact-form"ref={form}  onSubmit={submitHandler}>
-      <label >Name</label>
+      <label >{t("publicTestimonial.name")}</label>
       <input className="form-control" type="text" name="name" value={completed.name} onChange={handleChange} />
-      <label>Description</label>
+      <label>{t("publicTestimonial.description")}</label>
       <textarea className="form-control" rows="10"  name="description" value={completed.description} onChange={handleChange} />
-      <label >Social account (optional) </label>
+      <label >{t("publicTestimonial.social")}  ({t("publicTestimonial.optional")}) </label>
       <input className="form-control" type="text" name="instagram" value={completed.instagram} onChange={handleChange} />
-      <label >Link (optional)</label>
+      <label >Link ({t("publicTestimonial.optional")}) </label>
       <input className="form-control" type="text" name="link" value={completed.link} onChange={handleChange} />
 
 
-      <label >Image</label>
+      <label >{t("publicTestimonial.image")} </label>
       <input className="form-control"  type="file" id="image" name="image" value={completed.image} onChange={handleChange} />
       {errors.image ? (
               <p style={{color: 'red'}}>{errors.image}</p>
             ) : null}
       <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i class="fa fa-paper-plane "></i>
-			        Public</button>
+      {t("publicTestimonial.public")} </button>
 
               
 </form>
