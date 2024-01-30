@@ -1,7 +1,7 @@
 import React, {useEffect} from "react"
 import {useTranslation} from 'react-i18next'
 import './Purchase.css'
-import Footer from "../Footer"
+
 
 
 
@@ -36,17 +36,18 @@ const Purchase2ES = () => {
                 <div className="section-title st-center">
                     <h3>Reserva tu turno</h3>
                     <p>MENTAL FLEX</p>
-                    <div class="tidycal-embed" data-path="mental-flex/sesionesindividualesmensuales"></div>
+                    <div className="tidycal-embed"  data-path="mental-flex/sesionesindividualesmensuales"></div>
+                    
+                </div>
+                
                 </div>
 
                 </div>
 
                 </div>
 
-                </div>
-
-  
-
+    
+    
 
 
 <footer className="site-footer">
@@ -66,8 +67,7 @@ const Purchase2ES = () => {
 	</footer>
 </div>
         
-)
-
+    )
 }
 
 export default Purchase2ES

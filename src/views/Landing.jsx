@@ -25,13 +25,13 @@ import Congratulations from "../components/Congratulations/Congratulations";
 import Purchase1EN from "../components/Purchase/Purchase1EN";
 import Purchase1ES from "../components/Purchase/Purchase1ES";
 import Purchase2EN from "../components/Purchase/Purchase2EN";
-import Purchase2ES from "../components/Purchase/Purchase2ES.JSX";
 import Purchase3EN from "../components/Purchase/Purchase3EN";
 import Purchase3ES from "../components/Purchase/Purchase3ES";
 import Purchase4EN from "../components/Purchase/Purchase4EN";
 import Purchase4ES from "../components/Purchase/Purchase4ES";
 import Purchase5EN from "../components/Purchase/Purchase5EN";
 import Purchase5ES from "../components/Purchase/Purchase5ES";
+import Purchase2ES from "../components/Purchase/Purchase2ES";
 
 
 
