@@ -56,6 +56,7 @@ const FormBlog = () => {
        
       return (
         <div key={i}>
+
           <input
             type="checkbox"
             id={d.name}
@@ -65,7 +66,7 @@ const FormBlog = () => {
             checked={checked}
           
           />
-          <label htmlFor={d.name}>{d.name}</label>
+          <label htmlFor={d.name}> {d.name} </label>
         </div>
       );
     });
