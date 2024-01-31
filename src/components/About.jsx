@@ -28,7 +28,7 @@ const About = () => {
 										<div className="col-md-4">
 							<div className="st-member">
 								<div className="st-member-img">
-									<img src="assets/photos/member3.png" alt="" className="img-responsive"/>
+									<img src="assets/photos/MERCEDES.jpeg" alt="" className="img-responsive"/>
 								</div>
 								<div className="st-member-info">
 									<strong className="st-member-name">Mercedes Frías</strong>
