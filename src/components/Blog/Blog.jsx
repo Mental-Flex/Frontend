@@ -11,9 +11,7 @@ const Blog = () => {
 
 	const [t, i18n] = useTranslation("global")
 
-    // voy a preguntar si esta autenticado y si hay user y si si voy a llamar a getuser del backend para que me traiga
-    //  el usuario role y si role es admin voy a poner un boton (en un side bar) que me lleve a un formulario para publicar blog, luego voy
-    //   a hacer el detalle de cada blog
+
 
 	const [selectedFilter, setSelectedFilter] = useState('All');
 	const [originalPublications, setOriginalPublications] = useState([]);
@@ -30,16 +28,17 @@ const Blog = () => {
 
 	
     
+	useEffect(() => {
+		const fetchData = async () => {
+		  console.log("Dispatching getCategories and getAllPublications");
+		  await dispatch(getCategories());
+		  await dispatch(getAllPublications());
+		};
+	  
+		fetchData();
+	  }, []);
 
-     useEffect(()=>{
-        dispatch(getAllPublications())
-    },[dispatch])
-
-	useEffect(()=>{
-        dispatch(getCategories())
-    },[dispatch])
-
-	
+  
 
 	const filter = (event) => {
 
@@ -101,9 +100,9 @@ const Blog = () => {
 
 				
         
-
+					{console.log('Publications:', publications)}
                    
-					<CardsContainer publications={filtered.length == 0? publications : filtered} />
+					<CardsContainer publications={filtered.length === 0? publications : filtered} />
 
 
 
