@@ -138,11 +138,15 @@ const Pricing = () => {
 
 
 
+				<br/>
 
-				<div className="row">
 
 
-				<div className="col-md-3 same-height-card">
+
+				<div className="row" >
+
+
+				<div className="col-md-3 same-height-card ">
 					<div className="pricing-table">
 						<div className="pricing-header">
 							<div className="pt-price">$65</div>
