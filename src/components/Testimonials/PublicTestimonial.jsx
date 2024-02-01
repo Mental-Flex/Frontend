@@ -100,7 +100,7 @@ const PublicTestimonial = () => {
     formData.append("image", e.target.image.files[0]);
 
     axios
-    .post("http://localhost:3000/testimonials/", formData)
+    .post("https://mentalflexbackend.vercel.app/testimonials/", formData)
     .then(() => {
       setCreate(!create);
       setCompleted(initialState);

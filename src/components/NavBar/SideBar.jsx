@@ -31,7 +31,7 @@ const SideBar = () => {
           if (user && isAuthenticated) {
             try {
               const username = user.name;
-              const response = await axios.post('http://localhost:3000/auth/', { username });
+              const response = await axios.post('https://mentalflexbackend.vercel.app/auth/', { username });
               setRole(response.data.roles[0].name);
               
               

@@ -134,7 +134,7 @@ const FormBlog = () => {
 
 
     axios
-    .post("http://localhost:3000/publications/", formData)
+    .post("https://mentalflexbackend.vercel.app/publications/", formData)
     .then(() => {
       setCreate(!create);
       setCompleted(initialState);

@@ -12,7 +12,7 @@ export const GET_TESTIMONIALS = 'GET_TESTIMONIALS'
 export function getAllPublications() {
 
     return (dispatch) => {
-        return axios('http://localhost:3000/publications/')
+        return axios('https://mentalflexbackend.vercel.app/publications/')
         .then(res => dispatch({
             type: GET_PUBLICATIONS,
             payload: res.data
@@ -38,7 +38,7 @@ export const filterByCategory = (value) => {
   
   export const getCategories = () => {
     return(dispatch) => {
-        return axios("http://localhost:3000/category/")
+        return axios("https://mentalflexbackend.vercel.app/category/")
         .then(res => dispatch({
             type: GET_CATEGORIES,
             payload :res.data
@@ -55,7 +55,7 @@ export const filterByCategory = (value) => {
   
 export function getPublicationById(idPublication) {
     return(dispatch) => {
-        return axios.get(`http://localhost:3000/publications/${idPublication}`)
+        return axios.get(`https://mentalflexbackend.vercel.app/publications/${idPublication}`)
         .then(res => dispatch({
             type: GET_PUBLICATION_ID,
             payload: res.data
@@ -71,7 +71,7 @@ export function getPublicationById(idPublication) {
 export const createPublication = (formData) => {
 
     return(dispatch) => {
-        return axios.post("http://localhost:3000/publications/", formData, {
+        return axios.post("https://mentalflexbackend.vercel.app/publications/", formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
@@ -90,24 +90,24 @@ export const createPublication = (formData) => {
   }
 
 
-  export const getOrders = () => {
-    return(dispatch) => {
-        return axios("http://localhost:3000/orders/")
-        .then(res => dispatch({
-            type: GET_ORDERS,
-            payload :res.data
+//   export const getOrders = () => {
+//     return(dispatch) => {
+//         return axios("https://mentalflexbackend.vercel.app/orders/")
+//         .then(res => dispatch({
+//             type: GET_ORDERS,
+//             payload :res.data
 
-        }))
-        .catch(error => {
+//         }))
+//         .catch(error => {
             
-            alert('No se encontraron orders');
-        });
-    }
-  }
+//             alert('No se encontraron orders');
+//         });
+//     }
+//   }
 
   export const getTestimonials = () => {
     return(dispatch) => {
-        return axios("http://localhost:3000/testimonials/")
+        return axios("https://mentalflexbackend.vercel.app/testimonials/")
         .then(res => dispatch({
             type: GET_TESTIMONIALS,
             payload :res.data
