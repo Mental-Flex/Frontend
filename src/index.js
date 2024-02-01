@@ -43,8 +43,8 @@ root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
     <Auth0Provider
-      domain="dev-2x57svitcxx0k6g3.us.auth0.com"
-      clientId="fhx5yGIXdxt4DuxAlOOVGg8mRVJI3ZQs"
+      domain="dev-mf4ckivqqauvyjxr.us.auth0.com"
+      clientId="m3RpuvAw5a10hWYALIpLjD0W0zC9Srbs"
       redirectUri={window.location.origin}
       scope="openid profile email"
     >
