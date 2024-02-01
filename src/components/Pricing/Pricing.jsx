@@ -181,10 +181,12 @@ const Pricing = () => {
 
 
 				<div className="col-md-3 same-height-card" >
-					<div className="pricing-table">
+					<div className="pricing-table featured">
 						<div className="pricing-header">
 							<div className="pt-price">$416</div>
 							<div className="pt-name">{t("pricing.couplesPackage1")}</div>
+							<div className="featured-text">{t("pricing.individualMonth1")}</div>
+							
 						</div>
 						<div className="pricing-body">
 							<ul>
