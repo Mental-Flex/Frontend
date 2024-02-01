@@ -1213,6 +1213,7 @@ ul.styled-list.list-star li:before {
   border: 1px solid #f2f2f2;
   border-radius: 5px;
   background-color: #fff;
+  
 }
 .pricing-table .pricing-header .pt-price {
   font-family: "Oswald";

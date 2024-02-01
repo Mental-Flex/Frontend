@@ -23,19 +23,15 @@ const Pricing = () => {
 					</div>
 				</div>
 			</div>
+
+
+
 			<div className="row">
 
 
-
-
-
-
-
-
-
-				<div className="col-md-3 same-height-card">
+				<div className="col-md-3 same-height-card  ">
 					<div className="pricing-table">
-						<div className="pricing-header">
+						<div className="pricing-header ">
 							<div className="pt-price">$50</div>
 							<div className="pt-name">{t("pricing.individual1")}</div>
 						</div>
@@ -43,6 +39,11 @@ const Pricing = () => {
 							<ul>
 								<li><i className="fa fa-check"></i> {t("pricing.individual2")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.individual3")}</li>
+								<li><br/></li>
+								<li><br/></li>
+								<li><br/></li>
+							
+								
 								
 								
 							</ul>
@@ -131,7 +132,16 @@ const Pricing = () => {
 						</div>
 					</div>
 				</div>
-				
+
+
+				</div>
+
+
+
+
+				<div className="row">
+
+
 				<div className="col-md-3 same-height-card">
 					<div className="pricing-table">
 						<div className="pricing-header">
@@ -143,6 +153,8 @@ const Pricing = () => {
 								<li><i className="fa fa-check"></i> {t("pricing.couples2")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.couples3")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.couples4")}</li>
+								<li><br/></li>
+
 								
 							</ul>
 						</div>
@@ -161,10 +173,6 @@ const Pricing = () => {
 						</div>
 					</div>
 				</div>
-
-
-
-				<div >
 
 
 				<div className="col-md-3 same-height-card" >
@@ -198,12 +206,15 @@ const Pricing = () => {
 					</div>
 				</div>
 
+
 				</div>
+
+			
 
 
 
 			</div>
-		</div>
+		
 	</section>
 
         </div>
