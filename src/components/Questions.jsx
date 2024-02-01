@@ -15,7 +15,6 @@ const Questions = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					 <h2 className="tac">{t("questions.questions1")}</h2> 
 					<div className="section-title st-center">
 						<h3>{t("questions.questions2")}</h3>
 						<p>{t("questions.questions3")}</p>
