@@ -1,9 +1,9 @@
-.navbar {
+.navbarr {
     background-color: rgba(40, 40, 40, 0.95); /* Color de fondo de la barra de navegación */
     overflow: hidden;
   }
   
-  .navbar a {
+  .navbarr a {
     float: left; /* Alinea los elementos de la barra de navegación en línea */
     display: block;
     color: white;
@@ -12,18 +12,18 @@
     text-decoration: none;
   }
   
-  .navbar a:hover {
+  .navbarr a:hover {
     background-color: #FFA500; /* Cambia el color de fondo al pasar el ratón sobre un enlace */
     color: black;
   }
   
-  .navbar ul {
+  .navbarr ul {
     list-style-type: none; /* Elimina los puntos de lista */
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
   
-  .navbar li {
+  .navbarr li {
     display: inline;
   }
