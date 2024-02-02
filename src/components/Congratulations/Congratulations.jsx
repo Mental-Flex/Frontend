@@ -27,7 +27,7 @@ const Congratulations = () => {
         
 
 
-        <nav className='navbar' >
+        <nav className='navbarr' >
           <ul >
 
             <li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
