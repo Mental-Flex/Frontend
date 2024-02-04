@@ -79,7 +79,7 @@ const Blog = () => {
 					 <div className="filter mb40">
 						<form id="filter">
 							<fieldset className="group" name="category" onClick={(e) => filter(e)} >
-							<label className="btn btn-default"><input type="radio" name="filter" value="All"/>All</label>
+							<label className="btn btn-default btn-main"><input type="radio" name="filter" value="All"/>All</label>
 
 								{categories?.map((c) => {
             return (
