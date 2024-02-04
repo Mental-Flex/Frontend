@@ -19,7 +19,7 @@ export function getAllPublications() {
         }))
         .catch(error => {
             
-            alert('No se encontraron publicaciones');
+            alert('Server Loading');
         });
     }
 
@@ -46,7 +46,7 @@ export const filterByCategory = (value) => {
         }))
         .catch(error => {
             
-            alert('No se encontraron categorias');
+            alert('Server Loading');
         });
     }
   }
@@ -62,7 +62,7 @@ export function getPublicationById(idPublication) {
         }))
         .catch(error => {
             
-            alert('No existe ese ID');
+            alert('Server Loading');
         });
     }
 }
@@ -83,7 +83,7 @@ export const createPublication = (formData) => {
         }))
         .catch(error => {
             
-            alert('No se puede crear la publicacion');
+            alert('Server Loading');
         });
     }
 
@@ -115,7 +115,7 @@ export const createPublication = (formData) => {
         }))
         .catch(error => {
             
-            alert('No se encontraron testimonios');
+            alert('Server Loading');
         });
     }
   }

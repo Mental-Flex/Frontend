@@ -32,7 +32,7 @@ function reducer(state= initialState, {type, payload}) {
                     ? state.publications
                     : state.publications.filter((r) => r.category.includes(payload));
                 } else {
-                  alert('No hay recetas con esa categoría');
+                  alert('Server Loading');
                   return { ...state }; // Devuelve el estado actual sin cambios
                 }
               
