@@ -40,7 +40,7 @@ const About = () => {
 														className="fa fa-facebook"></i></a></li>
 											<li><a href="https://www.instagram.com/psi.mercedesfrias/" className="twitter" data-toggle="tooltip" data-placement="top" title="Instagram"><i
 														className="fa fa-instagram"></i></a></li>
-											<li><a href="#" className="dribbble" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i
+											<li><a href="https://www.linkedin.com/company/mental-flex-team" className="dribbble" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i
 														className="fa fa-linkedin"></i></a></li>
 										</ul>
 									</div>
