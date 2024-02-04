@@ -90,16 +90,16 @@ color: #333;
 
 .slide .quote-icon{
 
-  font-size: 30px;
+  font-size: px;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .slide .mydetails {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
 }
 
@@ -117,12 +117,13 @@ color: #333;
   font-size: 12px;
   font-weight: 400;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .mytestimonial .image {
 
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
