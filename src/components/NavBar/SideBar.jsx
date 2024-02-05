@@ -90,12 +90,6 @@ console.log(role)
 
 <lu>
   
-  <li  className='nav-text'>
-<Link to='/public' className="logout-button"> 
-  <span>{t("home.sidebar-public")}</span>
-</Link>
-
-</li>
 
 <li  className='nav-text' >
 <Link  onClick={handleLogout} className="logout-button">
