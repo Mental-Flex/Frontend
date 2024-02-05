@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux"
 import axios from 'axios'
 import { validate } from "./validations";
 import {useTranslation} from 'react-i18next'
+import './styles.css'
 
 
 
@@ -128,7 +129,7 @@ const PublicTestimonial = () => {
         <div data-spy="scroll" data-target=".main-nav">
 
 
-<nav className='navbar' >
+<nav className='navbarr' >
           <ul >
 
             <li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
