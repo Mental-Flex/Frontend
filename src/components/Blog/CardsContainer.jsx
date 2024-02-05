@@ -16,7 +16,7 @@ const CardsContainer = (props) => {
   }, [props.publications]);
 
   if (loading) {
-    return <div>Cargando...</div>;
+    return <div>Loading...</div>;
   }
 
 

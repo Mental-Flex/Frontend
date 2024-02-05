@@ -90,16 +90,16 @@ color: #333;
 
 .slide .quote-icon{
 
-  font-size: 30px;
+  font-size: px;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .slide .mydetails {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
 }
 
@@ -117,14 +117,46 @@ color: #333;
   font-size: 12px;
   font-weight: 400;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .mytestimonial .image {
 
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+
+.navbarr {
+  background-color: rgba(40, 40, 40, 0.95); /* Color de fondo de la barra de navegación */
+  overflow: hidden;
+}
+
+.navbarr a {
+  float: left; /* Alinea los elementos de la barra de navegación en línea */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbarr a:hover {
+  background-color: #FFA500; /* Cambia el color de fondo al pasar el ratón sobre un enlace */
+  color: black;
+}
+
+.navbarr ul {
+  list-style-type: none; /* Elimina los puntos de lista */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbarr li {
+  display: inline;
 }
 
 

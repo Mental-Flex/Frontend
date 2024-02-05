@@ -76,7 +76,6 @@ const Testimonials = () => {
 
         <p>{e.description}</p>
         <i class='bx bxs-quote-alt-left quote-icon'></i>
-
         <div className='mydetails'>
             <span className='name'>{e.name}</span>
             <Link to={e.link}>
@@ -99,12 +98,6 @@ const Testimonials = () => {
 
 </div>
 
-
-
-
-
-          
-        
           
         </SwiperSlide>
 
