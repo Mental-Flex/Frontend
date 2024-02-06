@@ -74,7 +74,7 @@ const Congratulations = () => {
 				<div className="col-md-12">
 					&copy; <a >Mental Flex</a> 2023.
 					
-					Email <a href="mailto:mentalflexinfo@gmail.com">mentalflexinfo@gmail.com</a>
+					Email <a href="mailto:info@mental-flex.com">info@mental-flex.com</a>
 					
 				</div>
 				

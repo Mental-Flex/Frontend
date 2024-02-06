@@ -15,7 +15,7 @@ const Footer = () => {
 				<div className="col-md-12">
 					&copy; <a >Mental Flex</a> 2023.
 					
-					Made by <a >Sofia Victoria Franco</a>
+					Email <a href="mailto:info@mental-flex.com">info@mental-flex.com</a>
 					
 				</div>
 				

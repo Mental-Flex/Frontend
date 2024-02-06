@@ -109,11 +109,6 @@ console.log(role)
 
 <lu>
   
-<li  className='nav-text'>
-<Link to='/testimonial'>
-  <span>{t("home.sidebar-testimonial")}</span>
-</Link>
-</li>
 
 
 <li  className='nav-text' >

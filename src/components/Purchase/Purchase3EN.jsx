@@ -58,7 +58,7 @@ const Purchase3EN = () => {
 
                     
 					
-					Email <a href="mailto:mentalflexinfo@gmail.com">mentalflexinfo@gmail.com</a>
+					Email <a href="mailto:info@mental-flex.com">info@mental-flex.com</a>
 					
 				</div>
 				
