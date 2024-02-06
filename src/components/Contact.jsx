@@ -88,7 +88,7 @@ const Contact = () => {
             <address>
               <strong>mentalflexinfo@gmail.com</strong>
               <br />
-              (+54) 1150451372
+              (+54) 91150451372
              
             </address>
           </div>
