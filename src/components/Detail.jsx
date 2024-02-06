@@ -37,12 +37,12 @@ const Detail = () => {
 					<div className="section-title st-center">
 						<p>{detail && detail.name ? detail.name : ''}</p>
 					</div>
-					<div className="row mb90">
-						<div className="col-md-6">
+					<div >
+						<div >
 							<p>{detail && detail.description ? detail.description : ''}</p>
 						</div>
-										<div className="col-md-4">
-							<div className="st-member">
+										<div >
+							<div >
 								<div >
 									<img src={detail.image} alt={detail.name}/>
 								</div>
@@ -57,7 +57,7 @@ const Detail = () => {
 
 					</div>
 
-					<div className="row">
+					<div >
 					
 					
 
