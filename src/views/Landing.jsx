@@ -55,10 +55,10 @@ const Landing = () => {
                         <Funfacts />
                         <Services />
                         <Phrase />
-                        <Blog />
+                        <Questions />
                         <Testimonials />
                         <Pricing />
-                        <Questions />
+                        
                         <CallUs />
                         <Contact />
                         <Footer />

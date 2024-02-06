@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import './Blog.css';
 
+
 const Blog = () => {
   const [t, i18n] = useTranslation("global");
   

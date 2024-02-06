@@ -79,12 +79,24 @@ const NavBar = () => {
       offset={-100} 
       duration={500}
       style={{ cursor: 'pointer' }} >{t("home.NavBar-Services")}</Link></li>
-                <li><Link to="portfolio" 
-      spy={true} 
-      smooth={true} 
-      offset={50} 
-      duration={500} 
-      style={{ cursor: 'pointer' }}>{t("home.NavBar-Blog")}</Link></li>
+
+
+
+<li>
+  <a
+    href="https://mental-flex.blogspot.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ cursor: 'pointer' }}
+  >
+    {t("home.NavBar-Blog")}
+  </a>
+</li>
+
+
+
+
+
                 <li><Link  to="pricing" 
       spy={true} 
       smooth={true} 
